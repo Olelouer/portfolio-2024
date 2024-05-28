@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  private defaultLanguage: string = 'en';
+
+  constructor(
+    private translateService: TranslateService
+  ) {
+    this.translateService.setDefaultLang(this.defaultLanguage);
+    this.translateService.use(localStorage.getItem('lang') || this.defaultLanguage);
+  }
   title = 'portfolio2024';
 }
