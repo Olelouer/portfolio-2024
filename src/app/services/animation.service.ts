@@ -1,14 +1,15 @@
 import { Injectable, ElementRef } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AnimationService {
   private isAnimating: Boolean = false;
-  constructor() { }
+  constructor() {}
 
   reverseAnimation(array: Array<string>, element: ElementRef): void {
-     
+    this.isAnimating;
+
     // Check if the animation is currently active and prevent it from re running
     if (this.isAnimating) {
       return;
@@ -29,12 +30,12 @@ export class AnimationService {
         let temp = array[startIndex];
         array[startIndex] = array[endIndex];
         array[endIndex] = temp;
-  
+
         startIndex++;
         endIndex--;
-  
-        element.nativeElement.innerHTML = array.join("");
-  
+
+        element.nativeElement.innerHTML = array.join('');
+
         if (startIndex >= endIndex) {
           // CLear the interval
           clearInterval(interval);
@@ -52,7 +53,7 @@ export class AnimationService {
           }
         }
       }, intervalTime);
-    }
+    };
 
     // Run the animation
     runAnimation();

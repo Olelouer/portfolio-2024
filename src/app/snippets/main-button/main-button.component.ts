@@ -3,16 +3,11 @@ import { AnimationService } from '../../services/animation.service';
 
 @Component({
   selector: 'snip-main-button',
-  templateUrl: './main-button.component.html'
+  templateUrl: './main-button.component.html',
 })
 export class MainButtonComponent {
-  @Input() buttonText: string = "";
+  @Input() buttonText: string = '';
   @ViewChild('linkElement') linkElement!: ElementRef;
 
-  constructor (private animationService: AnimationService) {};
-
-  onHover() {
-    let textArray = this.linkElement.nativeElement.textContent.split("");
-    this.animationService.reverseAnimation(textArray, this.linkElement);
-  }
+  constructor(private animationService: AnimationService) {}
 }

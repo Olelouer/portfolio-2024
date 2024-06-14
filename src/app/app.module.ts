@@ -35,25 +35,21 @@ export function HttpLoaderFactory(http: HttpClient) {
     BannerComponent,
     ContactComponent,
     MainButtonComponent,
-    LinkComponent
+    LinkComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    TranslateModule.forRoot(
-      {
-      loader:{
+    TranslateModule.forRoot({
+      loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps:[HttpClient]
-      }
-    }
-    )
+        deps: [HttpClient],
+      },
+    }),
   ],
-  providers: [
-    HttpClient
-  ],
-  bootstrap: [AppComponent]
+  providers: [HttpClient],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

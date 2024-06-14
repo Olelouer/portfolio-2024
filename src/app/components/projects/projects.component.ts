@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'lib-projects',
   templateUrl: './projects.component.html',
 })
-export class ProjectsComponent {
-
-}
+export class ProjectsComponent {}

@@ -6,15 +6,14 @@ import { AnimationService } from '../../services/animation.service';
   templateUrl: './link.component.html',
 })
 export class LinkComponent {
-  @Input() linkText: string = "";
-  @Input() linkUrl: string = "";
+  @Input() linkText: string = '';
+  @Input() linkUrl: string = '';
   @ViewChild('linkElement') linkElement!: ElementRef;
 
-
-  constructor(private animationService: AnimationService) { }
+  constructor(private animationService: AnimationService) {}
 
   onHover() {
-    let textArray = this.linkElement.nativeElement.textContent.split("");
-    this.animationService.reverseAnimation(textArray, this.linkElement);
+    // let textArray = this.linkElement.nativeElement.textContent.split("");
+    // this.animationService.reverseAnimation(textArray, this.linkElement);
   }
 }

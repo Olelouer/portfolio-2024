@@ -1,12 +1,16 @@
-<header class="flex items-center justify-between w-full border-b border-gray-400 p-5 relative">
-    <nav class="flex items-center gap-4">
-        <snip-link
-            linkText="About">
-        </snip-link>
-    </nav>
-    <snip-main-button
-        buttonText="Contact me"
-    >
-    </snip-main-button>
-    
+<header
+  #headerHtml
+  class="fixed left-0 right-0 top-0 z-40 flex w-full items-center justify-between border-b border-gray-400 bg-white px-5 py-3 duration-200"
+>
+  <div>
+    <p class="text-6xl font-bold"><span>O</span><span>L</span><span>L</span></p>
+  </div>
+  <nav
+    class="absolute bottom-1/2 right-1/2 flex translate-x-1/2 translate-y-1/2 items-center gap-6"
+  >
+    <snip-link linkText="About"> </snip-link>
+    <snip-link linkText="Projects"> </snip-link>
+    <snip-link linkText="Contact"> </snip-link>
+  </nav>
+  <snip-main-button buttonText="Contact me"> </snip-main-button>
 </header>

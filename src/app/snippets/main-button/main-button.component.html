@@ -1,3 +1,8 @@
-<div class="">
-    <a #linkElement (mouseenter)="onHover()" class="flex py-4 px-6 rounded text-white dark:text-black hover:bg-gray-800 duration-300 bg-black dark:bg-white text-center font-bold text-base sm:text-lg">{{buttonText}}</a>
+<div class="flex">
+  <a
+    #linkElement
+    class="relative flex overflow-hidden rounded bg-light-primary px-6 py-3 text-center text-base font-bold text-white duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-0 after:bg-black after:duration-300 hover:text-white hover:after:w-full dark:border-white dark:text-black dark:after:bg-white sm:text-lg"
+  >
+    <span class="relative z-10">{{ buttonText }}</span></a
+  >
 </div>

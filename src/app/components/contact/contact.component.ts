@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'lib-contact',
   templateUrl: './contact.component.html',
 })
-export class ContactComponent {
-
-}
+export class ContactComponent {}

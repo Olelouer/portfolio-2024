@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'view-homepage',
-  templateUrl: './homepage.component.html'
+  templateUrl: './homepage.component.html',
 })
-export class HomepageComponent {
-}
+export class HomepageComponent {}
