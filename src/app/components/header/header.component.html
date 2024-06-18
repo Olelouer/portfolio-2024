@@ -8,9 +8,9 @@
   <nav
     class="absolute bottom-1/2 right-1/2 flex translate-x-1/2 translate-y-1/2 items-center gap-6"
   >
-    <snip-link linkText="About"> </snip-link>
-    <snip-link linkText="Projects"> </snip-link>
-    <snip-link linkText="Contact"> </snip-link>
+    <snip-link [linkText]="'header.about' | translate"> </snip-link>
+    <snip-link [linkText]="'header.projects' | translate"> </snip-link>
+    <snip-link [linkText]="'header.contact' | translate"> </snip-link>
   </nav>
-  <snip-main-button buttonText="Contact me"> </snip-main-button>
+  <snip-main-button [buttonText]="'header.cta' | translate"> </snip-main-button>
 </header>

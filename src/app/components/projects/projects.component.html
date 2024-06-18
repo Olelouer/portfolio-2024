@@ -1,1 +1,21 @@
-<p>projects works!</p>
+<div>
+  <h2>{{ 'projects.title' | translate }}</h2>
+  <div>
+    <a *ngFor="let filter of filters">{{ filter }}</a>
+  </div>
+  <div>
+    <div *ngFor="let project of projectsList">
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.text }}</p>
+      <p>{{ project.excerpt }}</p>
+      <div>
+        <span *ngFor="let type of project.types">{{ type }}</span>
+      </div>
+      <img
+        [src]="project.image"
+        alt="{{ project.title }}"
+        *ngIf="project.image"
+      />
+    </div>
+  </div>
+</div>
