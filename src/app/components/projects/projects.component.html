@@ -1,21 +1,13 @@
-<div>
-  <h2>{{ 'projects.title' | translate }}</h2>
-  <div>
-    <a *ngFor="let filter of filters">{{ filter }}</a>
-  </div>
-  <div>
-    <div *ngFor="let project of projectsList">
-      <h3>{{ project.title }}</h3>
-      <p>{{ project.text }}</p>
-      <p>{{ project.excerpt }}</p>
-      <div>
-        <span *ngFor="let type of project.types">{{ type }}</span>
+<div class="px-4 pt-20 lg:pt-40">
+  <div class="container mx-auto">
+    <h2>{{ 'projects.title' | translate }}</h2>
+    <div>
+      <a *ngFor="let filter of filters">{{ filter }}</a>
+    </div>
+    <div class="grid gap-10 lg:grid-cols-2">
+      <div *ngFor="let project of projectsList">
+        <lib-project-card [project]="project"></lib-project-card>
       </div>
-      <img
-        [src]="project.image"
-        alt="{{ project.title }}"
-        *ngIf="project.image"
-      />
     </div>
   </div>
 </div>

@@ -31,7 +31,7 @@ export class HeaderComponent implements AfterViewInit {
 
   headerBehavior() {
     let scroll = window.scrollY;
-    if (scroll >= this.previousPosition) {
+    if (scroll >= this.previousPosition && scroll > 50) {
       this.headerHtml.nativeElement.style.top = `-${this.headerHeight}px`;
     } else {
       this.headerHtml.nativeElement.style.top = '0';

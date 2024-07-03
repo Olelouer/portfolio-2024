@@ -7,18 +7,19 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+// VIEWS ELEMENTS
+import { HomepageComponent } from './views/homepage/homepage.component';
+
 // COMPONENTS ELEMENTS
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-
-// VIEWS ELEMENTS
-import { HomepageComponent } from './views/homepage/homepage.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MainButtonComponent } from './snippets/main-button/main-button.component';
 import { LinkComponent } from './snippets/link/link.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -36,6 +37,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     MainButtonComponent,
     LinkComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,21 @@
 <header
   #headerHtml
-  class="fixed left-0 right-0 top-0 z-40 flex w-full items-center justify-between border-b border-gray-400 bg-white px-5 py-3 duration-200"
+  class="border-light fixed left-0 right-0 top-0 z-40 flex w-full border-b bg-white px-5 py-3 duration-200"
 >
-  <div>
-    <p class="text-6xl font-bold"><span>O</span><span>L</span><span>L</span></p>
+  <div class="container mx-auto flex items-center justify-between">
+    <div>
+      <p class="text-6xl font-bold">
+        <span>O</span><span>L</span><span>L</span>
+      </p>
+    </div>
+    <nav
+      class="absolute bottom-1/2 right-1/2 flex translate-x-1/2 translate-y-1/2 items-center gap-6"
+    >
+      <snip-link [linkText]="'header.about' | translate"> </snip-link>
+      <snip-link [linkText]="'header.projects' | translate"> </snip-link>
+      <snip-link [linkText]="'header.contact' | translate"> </snip-link>
+    </nav>
+    <snip-main-button [buttonText]="'header.cta' | translate">
+    </snip-main-button>
   </div>
-  <nav
-    class="absolute bottom-1/2 right-1/2 flex translate-x-1/2 translate-y-1/2 items-center gap-6"
-  >
-    <snip-link [linkText]="'header.about' | translate"> </snip-link>
-    <snip-link [linkText]="'header.projects' | translate"> </snip-link>
-    <snip-link [linkText]="'header.contact' | translate"> </snip-link>
-  </nav>
-  <snip-main-button [buttonText]="'header.cta' | translate"> </snip-main-button>
 </header>

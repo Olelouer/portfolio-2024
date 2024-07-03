@@ -7,16 +7,13 @@
   },
   "footer": {},
   "banner": {
-    "title": "Hello! I'm <br /><span class='text-light-primary'>Olivier Le Louër</span>",
-    "text": "Passionate<span class='font-medium text-light-primary'>Front-End Developer</span> adept at sculpting seamless digital experiences with <span class='font-medium text-light-primary'>Angular</span> and <span class='font-medium text-light-primary'>WordPress</span>, ready to turn your web dreams into captivating realities.",
+    "title": "Olivier Le Louër <br />Front-end Developer",
+    "text": "Passionate Front-End Developer adept at sculpting seamless digital experiences with Angular and WordPress, ready to turn your web dreams into captivating realities.",
     "buttonText": "My work"
   },
   "projects": {
     "title": "My projects",
-    "filters": {
-      "angular": "Angular",
-      "wordpress": "WordPress"
-    },
+    "filters": ["Angular", "WordPress"],
     "projects": [
       {
         "title": "Station SME",
@@ -28,11 +25,12 @@
       {
         "title": "Via Prévention",
         "text": "I am the text",
-        "excerpt": "Excerpt is there",
+        "excerpt": "Excerpt the return",
         "types": ["Wordpress", "Twig", "PHP", "SCSS"],
         "image": ""
       }
     ]
   },
+  "about": {},
   "contact": {}
 }

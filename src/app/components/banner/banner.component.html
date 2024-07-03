@@ -1,20 +1,24 @@
-<div class="px-4 pt-20 lg:pt-28">
+<div class="px-4 pt-20 lg:pt-40">
   <div class="container mx-auto grid gap-28 lg:grid-cols-2">
     <div class="flex flex-col">
       <h1
-        class="text-4xl font-bold text-gray-800 md:text-6xl"
+        class="font-roboto text-5xl font-black leading-normal text-light-text md:text-7xl"
         [innerHTML]="'banner.title' | translate"
       ></h1>
+    </div>
+    <div>
       <p
-        class="my-9 mb-8 text-lg leading-relaxed md:text-xl"
+        class="font-lora mb-5 mt-0 text-lg font-semibold leading-relaxed text-light-text md:text-2xl"
         [innerHTML]="'banner.text' | translate"
       ></p>
-      <snip-main-button
-        [buttonText]="'banner.buttonText' | translate"
-      ></snip-main-button>
-    </div>
-    <div class="flex justify-center">
-      <img src="/assets/images/cut-character.png" alt="" />
+      <div class="flex gap-5">
+        <snip-main-button
+          [buttonText]="'banner.button-text' | translate"
+        ></snip-main-button>
+        <snip-main-button
+          [buttonText]="'banner.button-text-2' | translate"
+        ></snip-main-button>
+      </div>
     </div>
   </div>
 </div>
