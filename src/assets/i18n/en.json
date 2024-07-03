@@ -21,13 +21,21 @@
         "text": "I am the text",
         "excerpt": "Excerpt is there",
         "types": ["Wordpress", "Twig", "PHP", "SCSS"],
-        "image": ""
+        "button": {
+          "link": "https://stationsme.ca/en/",
+          "title": "Link to the SME Station"
+        },
+        "image": "assets/images/stationsme.png"
       },
       {
         "title": "Via Prévention",
         "text": "I am the text",
         "excerpt": "Excerpt the return",
         "types": ["Wordpress", "Twig", "PHP", "SCSS"],
+        "button": {
+          "link": "https://viaprevention.com/",
+          "title": "Link to Via Prévention"
+        },
         "image": ""
       }
     ]

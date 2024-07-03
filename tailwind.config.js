@@ -24,7 +24,30 @@ module.exports = {
           secondary: '#fbbc05',
         },
       },
+      rotate: {
+        'y-180': 'rotateY(180deg)',
+      },
+      perspective: {
+        1000: '1000px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.transform-style-preserve-3d': {
+          'transform-style': 'preserve-3d',
+        },
+        '.backface-hidden': {
+          'backface-visibility': 'hidden',
+        },
+        '.perspective-1000': {
+          perspective: '1000px',
+        },
+        '.rotate-y-180': {
+          transform: 'rotateY(180deg)',
+        },
+      });
+    },
+  ],
 };

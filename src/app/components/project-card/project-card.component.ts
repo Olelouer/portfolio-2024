@@ -7,7 +7,10 @@ import { Component, Input, AfterViewInit } from '@angular/core';
 export class ProjectCardComponent implements AfterViewInit {
   @Input() project: {
     title?: string;
-    link?: string;
+    button?: {
+      link?: string;
+      title?: string;
+    };
     text?: string;
     excerpt?: string;
     types?: string[];
@@ -16,7 +19,5 @@ export class ProjectCardComponent implements AfterViewInit {
 
   constructor() {}
 
-  ngAfterViewInit(): void {
-    console.log(this.project);
-  }
+  ngAfterViewInit(): void {}
 }

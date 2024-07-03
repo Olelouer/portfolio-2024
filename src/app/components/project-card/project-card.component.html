@@ -1,19 +1,35 @@
-<div
-  class="scale-100 cursor-pointer rounded-3xl bg-light-bgSecondary p-8 transition-all hover:scale-105"
->
-  <a
-    href="{{ project.link }}"
-    class="font-roboto text-2xl font-semibold text-light-text"
-    >{{ project.title }}</a
+<div class="perspective-1000 group">
+  <div
+    class="transform-style-preserve-3d group-hover:rotate-y-180 relative transform rounded-3xl bg-light-bgSecondary p-8 duration-300"
   >
-  <p>{{ project.text }}</p>
-  <p>{{ project.excerpt }}</p>
-  <div class="flex gap-3">
-    <span
-      *ngFor="let type of project.types"
-      class="text-color-text font-sm rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold"
-      >{{ type }}</span
+    <!-- Front of the card -->
+    <div class="backface-hidden flex flex-col gap-5">
+      <img
+        [src]="project.image"
+        alt="{{ project.title }}"
+        *ngIf="project.image"
+        class="rounded-3xl"
+      />
+      <p class="font-roboto text-2xl font-semibold text-light-text">
+        {{ project.title }}
+      </p>
+      <div class="flex gap-3">
+        <span
+          *ngFor="let type of project.types"
+          class="text-color-text font-sm rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold"
+        >
+          {{ type }}
+        </span>
+      </div>
+    </div>
+    <!-- Back of the card -->
+    <div
+      class="backface-hidden rotate-y-180 absolute inset-8 justify-center gap-5"
     >
+      <p>{{ project.excerpt }}</p>
+      <a [href]="project.button?.link" target="_blank">{{
+        project.button?.title
+      }}</a>
+    </div>
   </div>
-  <img [src]="project.image" alt="{{ project.title }}" *ngIf="project.image" />
 </div>
