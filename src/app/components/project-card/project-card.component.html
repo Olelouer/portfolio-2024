@@ -1,9 +1,9 @@
-<div class="perspective-1000 group">
+<div class="group perspective-1000" data-aos="fade-up">
   <div
-    class="transform-style-preserve-3d group-hover:rotate-y-180 relative transform rounded-3xl bg-light-bgSecondary p-8 duration-300"
+    class="relative transform rounded-3xl bg-light-bgSecondary p-8 duration-300 transform-style-preserve-3d group-hover:rotate-y-180"
   >
     <!-- Front of the card -->
-    <div class="backface-hidden flex flex-col gap-5">
+    <div class="flex flex-col gap-5 backface-hidden">
       <img
         [src]="project.image"
         alt="{{ project.title }}"
@@ -24,9 +24,9 @@
     </div>
     <!-- Back of the card -->
     <div
-      class="backface-hidden rotate-y-180 absolute inset-8 justify-center gap-5"
+      class="absolute inset-8 rotate-y-180 justify-center gap-5 backface-hidden"
     >
-      <p>{{ project.excerpt }}</p>
+      <p class="text-xl text-light-text">{{ project.excerpt }}</p>
       <a [href]="project.button?.link" target="_blank">{{
         project.button?.title
       }}</a>

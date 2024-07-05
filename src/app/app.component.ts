@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -16,4 +17,8 @@ export class AppComponent {
     );
   }
   title = 'portfolio2024';
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

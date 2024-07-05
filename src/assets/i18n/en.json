@@ -37,6 +37,17 @@
           "title": "Link to Via Prévention"
         },
         "image": ""
+      },
+      {
+        "title": "Martine Deschesnes",
+        "text": "I am the text",
+        "excerpt": "Excerpt the re-return",
+        "types": ["Angular", "SCSS"],
+        "button": {
+          "link": "https://www.martinedeschesnes.com/en",
+          "title": "Link to Martine Deschesnes"
+        },
+        "image": ""
       }
     ]
   },
