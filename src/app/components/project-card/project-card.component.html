@@ -16,7 +16,7 @@
       <div class="flex gap-3">
         <span
           *ngFor="let type of project.types"
-          class="text-color-text font-sm rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold"
+          class="text-color-text rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold"
         >
           {{ type }}
         </span>
@@ -24,12 +24,12 @@
     </div>
     <!-- Back of the card -->
     <div
-      class="absolute inset-8 rotate-y-180 justify-center gap-5 backface-hidden"
+      class="absolute inset-8 rotate-y-180 justify-center gap-5 backface-hidden flex flex-col justify-between"
     >
       <p class="text-xl text-light-text">{{ project.excerpt }}</p>
-      <a [href]="project.button?.link" target="_blank">{{
+      <a [href]="project.button?.link" class="flex ml-auto" target="_blank">{{
         project.button?.title
-      }}</a>
+      }}<i class="icon-arrow-up-right"></i></a>
     </div>
   </div>
 </div>

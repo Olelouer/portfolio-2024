@@ -20,6 +20,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MainButtonComponent } from './snippets/main-button/main-button.component';
 import { LinkComponent } from './snippets/link/link.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { LogosBannerComponent } from './components/logos-banner/logos-banner.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -38,6 +39,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MainButtonComponent,
     LinkComponent,
     ProjectCardComponent,
+    LogosBannerComponent,
   ],
   imports: [
     BrowserModule,

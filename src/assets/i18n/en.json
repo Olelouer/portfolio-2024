@@ -13,8 +13,11 @@
     "button-text-2": "Download my resume"
   },
   "projects": {
-    "title": "My projects",
-    "filters": ["Angular", "WordPress"],
+    "title": "Projects",
+    "filters": {
+      "all": "All",
+      "list": ["Angular", "WordPress"]
+    },
     "projects": [
       {
         "title": "Station SME",

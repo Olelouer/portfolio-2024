@@ -14,7 +14,7 @@ export class ProjectsComponent {
   ngOnInit(): void {
     this.translate.get('projects').subscribe((res: any) => {
       this.projectsList = res.projects;
-      this.filters = res.filters;
+      this.filters = res.filters.list;
     });
   }
 
@@ -26,6 +26,12 @@ export class ProjectsComponent {
         project.types?.some((type) => type.trim().toLowerCase() === filterValue)
       );
       this.projectsList = filteredList;
+    });
+  }
+
+  removeFilters(event: any) {
+    this.translate.get('projects').subscribe((res: any) => {
+      this.projectsList = res.projects;
     });
   }
 }

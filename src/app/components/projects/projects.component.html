@@ -1,16 +1,43 @@
 <div class="px-4 pt-20 lg:pt-40">
   <div class="container mx-auto">
-    <h2>{{ 'projects.title' | translate }}</h2>
+    <h2 class="font-roboto text-3xl uppercase tracking-wider">
+      <i class="icon-forward mr-4 text-xl"></i
+      >{{ 'projects.title' | translate }}
+    </h2>
     <div class="flex gap-6 py-10">
-      <label *ngFor="let filter of filters" [for]="filter">
-        {{ filter }}
+      <div>
         <input
           type="radio"
+          class="hidden"
+          id="all"
           name="framework"
-          (click)="applyFilter($event)"
-          [value]="filter"
+          class="peer hidden"
+          (click)="removeFilters($event)"
+          checked
         />
-      </label>
+        <label
+          for="all"
+          class="text-color-text cursor-pointer rounded-full border-2 border-light-primary px-5 py-2 font-roboto font-semibold transition hover:bg-light-primary hover:text-white peer-checked:bg-light-primary peer-checked:text-white"
+        >
+          {{ 'projects.filters.all' | translate }}
+        </label>
+      </div>
+      <div *ngFor="let filter of filters">
+        <input
+          type="radio"
+          [id]="filter"
+          name="framework"
+          value="{{ filter }}"
+          class="peer hidden"
+          (click)="applyFilter($event)"
+        />
+        <label
+          [for]="filter"
+          class="text-color-text cursor-pointer rounded-full border-2 border-light-primary px-5 py-2 font-roboto font-semibold transition hover:bg-light-primary hover:text-white peer-checked:bg-light-primary peer-checked:text-white"
+        >
+          {{ filter }}
+        </label>
+      </div>
     </div>
     <div class="grid gap-10 lg:grid-cols-2">
       <div *ngFor="let project of projectsList">
