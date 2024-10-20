@@ -1,22 +1,27 @@
-<div class="px-4 pt-20 lg:pt-40">
+<div class="mt-20 px-4 lg:mt-48">
   <div class="container mx-auto grid gap-28 lg:grid-cols-2">
     <div class="flex flex-col">
       <h1
         class="font-roboto text-5xl font-black leading-normal text-light-text md:text-7xl"
-        [innerHTML]="'banner.title' | translate"
-      ></h1>
+      >
+        {{ 'components.banner.title' | translate }}
+        <br />
+        <span class="text-4xl">{{
+          'components.banner.subTitle' | translate
+        }}</span>
+      </h1>
     </div>
     <div>
       <p
-        class="font-lora mb-5 mt-0 text-lg font-semibold leading-relaxed text-light-text md:text-2xl"
-        [innerHTML]="'banner.text' | translate"
+        class="mb-5 mt-0 font-lora text-lg font-semibold leading-relaxed text-light-text md:text-2xl"
+        [innerHTML]="'components.banner.text' | translate"
       ></p>
       <div class="flex gap-5">
         <snip-main-button
-          [buttonText]="'banner.button-text' | translate"
+          [buttonText]="'components.banner.button-text' | translate"
         ></snip-main-button>
         <snip-main-button
-          [buttonText]="'banner.button-text-2' | translate"
+          [buttonText]="'components.banner.button-text-2' | translate"
         ></snip-main-button>
       </div>
     </div>

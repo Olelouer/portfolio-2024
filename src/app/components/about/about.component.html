@@ -1,18 +1,29 @@
-<div class="px-4 pt-20 lg:pt-28">
+<div class="my-20 px-4 lg:my-36">
   <div class="container mx-auto">
-    <h2
-      id="#about"
-      class="uppercase text-3xl font-roboto tracking-wider">
-      <i class="icon-forward text-xl mr-4"></i>About
-    </h2>
     <div class="grid gap-10 lg:grid-cols-2">
-      <div class="my-auto">
-        <p class="text-base lg:text-xl">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
-          quas, amet quisquam veniam vitae officia labore deserunt magnam
-          commodi, in laboriosam eum nihil quos optio cum sed repudiandae quidem
-          atque!
-        </p>
+      <div class="">
+        <h2
+          id="#about"
+          class="mb-10 font-roboto text-3xl uppercase tracking-wider"
+        >
+          <i class="icon-forward mr-4 text-xl"></i>
+          {{ 'components.about.title' | translate }}
+        </h2>
+        <p
+          class="mb-5 text-base lg:text-xl"
+          [innerHTML]="'components.about.intro' | translate"
+        ></p>
+        <snip-main-button
+          [buttonText]="'components.banner.button-text' | translate"
+        ></snip-main-button>
+      </div>
+      <div class="flex">
+        <div class="mx-auto flex overflow-hidden rounded-full bg-blue-200">
+          <img
+            class="contains mx-auto max-h-96"
+            src="\assets\images\cut-character3.png"
+          />
+        </div>
       </div>
     </div>
   </div>

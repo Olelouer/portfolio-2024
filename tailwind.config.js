@@ -14,7 +14,7 @@ module.exports = {
           bgSecondary: '#f3f4f7',
           text: '#2f2e2e',
           primary: '#1E90FF',
-          secondary: '#fbbc05',
+          secondary: '#FF8A5B',
         },
         dark: {
           bgPrimary: '#ffffff',

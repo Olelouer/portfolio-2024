@@ -4,18 +4,19 @@
 >
   <div class="container mx-auto flex items-center justify-between">
     <div>
-      <p class="text-6xl font-bold">
-        <span>O</span><span>L</span><span>L</span>
-      </p>
+      <img
+        src="assets/images/logos/website-logo.jpg"
+        class="h-16 object-contain"
+        alt="Website logo"
+      />
     </div>
-    <nav
-      class="absolute bottom-1/2 right-1/2 flex translate-x-1/2 translate-y-1/2 items-center gap-6"
-    >
-      <snip-link [linkText]="'header.about' | translate"> </snip-link>
-      <snip-link [linkText]="'header.projects' | translate"> </snip-link>
-      <snip-link [linkText]="'header.contact' | translate"> </snip-link>
+    <nav class="flex items-center gap-10">
+      <snip-link [linkText]="'components.header.about' | translate">
+      </snip-link>
+      <snip-link [linkText]="'components.header.projects' | translate">
+      </snip-link>
+      <snip-main-button [buttonText]="'components.header.cta' | translate">
+      </snip-main-button>
     </nav>
-    <snip-main-button [buttonText]="'header.cta' | translate">
-    </snip-main-button>
   </div>
 </header>

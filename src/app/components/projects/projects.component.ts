@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { filter } from 'rxjs';
 
 @Component({
   selector: 'lib-projects',
@@ -8,29 +7,10 @@ import { filter } from 'rxjs';
 })
 export class ProjectsComponent {
   projectsList: Array<any> = [];
-  filters: Array<string> = [];
   constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
-    this.translate.get('projects').subscribe((res: any) => {
-      this.projectsList = res.projects;
-      this.filters = res.filters.list;
-    });
-  }
-
-  applyFilter(event: any) {
-    const filterValue = event.target.value.toLowerCase();
-
-    this.translate.get('projects').subscribe((res: any) => {
-      let filteredList = res.projects.filter((project: { types?: string[] }) =>
-        project.types?.some((type) => type.trim().toLowerCase() === filterValue)
-      );
-      this.projectsList = filteredList;
-    });
-  }
-
-  removeFilters(event: any) {
-    this.translate.get('projects').subscribe((res: any) => {
+    this.translate.get('components.projects').subscribe((res: any) => {
       this.projectsList = res.projects;
     });
   }

@@ -16,7 +16,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { MainButtonComponent } from './snippets/main-button/main-button.component';
 import { LinkComponent } from './snippets/link/link.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
@@ -35,7 +34,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutComponent,
     ProjectsComponent,
     BannerComponent,
-    ContactComponent,
     MainButtonComponent,
     LinkComponent,
     ProjectCardComponent,

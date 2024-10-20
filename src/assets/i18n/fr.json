@@ -1,36 +1,73 @@
 {
-  "header": {
-    "about": "About",
-    "projects": "Projects",
-    "contact": "Contact",
-    "cta": "Contact me"
-  },
-  "footer": {},
-  "banner": {
-    "title": "Olivier Le Louër <br />Front-end Developer",
-    "text": "Passionate Front-End Developer adept at sculpting seamless digital experiences with Angular and WordPress, ready to turn your web dreams into captivating realities.",
-    "buttonText": "My work"
-  },
-  "projects": {
-    "title": "My projects",
-    "filters": ["Angular", "WordPress"],
-    "projects": [
-      {
-        "title": "Station SME",
-        "text": "I am the text",
-        "excerpt": "Excerpt is there",
-        "types": ["Wordpress", "Twig", "PHP", "SCSS"],
-        "image": ""
+  "components": {
+    "header": {
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact",
+      "cta": "Contact me"
+    },
+    "banner": {
+      "title": "Olivier Le Louër",
+      "subTitle": "Front-end Developer",
+      "text": "Passionate Front-End Developer adept at sculpting seamless digital experiences with Angular and WordPress, ready to turn your web dreams into captivating realities.",
+      "button-text": "Watch my work",
+      "button-text-2": "Download my resume"
+    },
+    "projects": {
+      "title": "Projects",
+      "filters": {
+        "all": "All",
+        "list": ["Angular", "WordPress"]
       },
-      {
-        "title": "Via Prévention",
-        "text": "I am the text",
-        "excerpt": "Excerpt the return",
-        "types": ["Wordpress", "Twig", "PHP", "SCSS"],
-        "image": ""
+      "projects": [
+        {
+          "title": "Station SME",
+          "text": "I am the text",
+          "excerpt": "Excerpt is there",
+          "types": ["Wordpress", "Twig", "PHP", "SCSS"],
+          "button": {
+            "link": "https://stationsme.ca/en/",
+            "title": "Link to the SME Station"
+          },
+          "image": "assets/images/stationsme.png"
+        },
+        {
+          "title": "Via Prévention",
+          "text": "I am the text",
+          "excerpt": "Excerpt the return",
+          "types": ["Wordpress", "Twig", "PHP", "SCSS"],
+          "button": {
+            "link": "https://viaprevention.com/",
+            "title": "Link to Via Prévention"
+          },
+          "image": ""
+        },
+        {
+          "title": "Martine Deschesnes",
+          "text": "I am the text",
+          "excerpt": "Excerpt the re-return",
+          "types": ["Angular", "SCSS"],
+          "button": {
+            "link": "https://www.martinedeschesnes.com/en",
+            "title": "Link to Martine Deschesnes"
+          },
+          "image": ""
+        }
+      ]
+    },
+    "about": {
+      "title": "About",
+      "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!"
+    },
+    "footer": {
+      "title": "Want to join me",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send"
       }
-    ]
-  },
-  "about": {},
-  "contact": {}
+    }
+  }
 }
