@@ -1,7 +1,11 @@
-<footer class="lg:mb- mt-20 px-4 pb-4 lg:mt-28">
+<footer class="lg:mb- mt-20 px-4 pb-4 lg:mt-28" data-aos="fade">
   <div class="bg- container mx-auto rounded-3xl bg-light-text p-12">
     <div class="grid grid-cols-2">
-      <div class="border-r border-light-bgSecondary border-opacity-10 pr-12">
+      <div
+        class="border-r border-white border-opacity-80 pr-12"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <h2 class="text-roboto mb-10 text-6xl font-medium text-white">
           {{ 'components.footer.title' | translate }}
         </h2>
@@ -11,41 +15,18 @@
           {{ 'components.footer.text' | translate }}
         </p>
       </div>
-      <form
-        class="contact-form flex flex-col pl-12"
-        (submit)="sendEmail($event)"
-      >
-        <div>
-          <label class="text-white">{{
-            'components.footer.form.name' | translate
-          }}</label>
-          <input type="text" name="user_name" />
-        </div>
-        <div>
-          <label class="text-white">{{
-            'components.footer.form.email' | translate
-          }}</label>
-          <input type="email" name="user_email" />
-        </div>
-        <div>
-          <label class="text-white">{{
-            'components.footer.form.message' | translate
-          }}</label>
-          <textarea name="message"></textarea>
-        </div>
-        <input
-          class="flex text-white"
-          type="submit"
-          [attr.value]="'components.footer.form.submit' | translate"
-        />
-      </form>
+      <lib-contact-form></lib-contact-form>
     </div>
-    <div>
-      <p class="mt-8 pt-8 text-sm text-white opacity-80">
+    <div class="mt-8 flex justify-between pt-8">
+      <p class="text-sm text-white opacity-80">
         &copy; {{ currentYear }}
         {{ 'components.footer.copyright' | translate }}.
       </p>
-      <a href=""><i class="icon-"></i></a>
+      <a [href]="'links.linkedin' | translate" target="_blank" class="flex"
+        ><i
+          class="icon-linkedin text-xl text-white opacity-80 transition-all hover:opacity-100"
+        ></i
+      ></a>
     </div>
   </div>
 </footer>

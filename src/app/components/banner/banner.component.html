@@ -1,17 +1,23 @@
 <div class="mt-20 px-4 lg:mt-48">
   <div class="container mx-auto grid gap-28 lg:grid-cols-2">
-    <div class="flex flex-col">
+    <div class="flex flex-col" data-aos="fade-up">
       <h1
-        class="font-roboto text-5xl font-black leading-normal text-light-text md:text-7xl"
+        class="flex flex-col gap-3 font-roboto text-5xl font-black leading-normal text-light-text md:text-7xl"
       >
         {{ 'components.banner.title' | translate }}
         <br />
-        <span class="text-4xl">{{
-          'components.banner.subTitle' | translate
-        }}</span>
+        <span class="relative z-10 flex max-w-fit text-4xl"
+          ><img
+            class="absolute -left-10 h-6 min-w-96 translate-y-2.5 object-cover"
+            src="assets/images/brush.svg"
+            alt=""
+          /><span class="z-10">{{
+            'components.banner.subTitle' | translate
+          }}</span>
+        </span>
       </h1>
     </div>
-    <div>
+    <div data-aos="fade-up">
       <p
         class="mb-5 mt-0 font-lora text-lg font-semibold leading-relaxed text-light-text md:text-2xl"
         [innerHTML]="'components.banner.text' | translate"

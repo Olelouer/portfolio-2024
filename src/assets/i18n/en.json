@@ -1,6 +1,6 @@
 {
   "links": {
-    "linkedin": ""
+    "linkedin": "www.linkedin.com/in/olivier-le-louer"
   },
   "components": {
     "header": {
@@ -8,6 +8,11 @@
       "projects": "Projects",
       "contact": "Contact",
       "cta": "Contact me"
+    },
+    "footer": {
+      "title": "Want to join me",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!",
+      "copyright": "Olivier Le Louër. All rights reserved"
     },
     "banner": {
       "title": "Olivier Le Louër",
@@ -84,16 +89,16 @@
       "title": "About",
       "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!"
     },
-    "footer": {
-      "title": "Want to join me",
-      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!",
-      "form": {
-        "name": "Name",
-        "email": "Email",
-        "message": "Message",
-        "submit": "Send"
-      },
-      "copyright": "Olivier Le Louër. All rights reserved"
+    "contact-form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send",
+      "placeholder": {
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "message": "I would like to know more about..."
+      }
     }
   }
 }
