@@ -1,16 +1,16 @@
-<footer class="lg:mb- mt-20 px-4 pb-4 lg:mt-28" data-aos="fade">
+<footer
+  class="lg:mb- mt-20 px-4 pb-4 lg:mt-28"
+  data-aos="fade"
+  data-aos-delay="200"
+>
   <div class="bg- container mx-auto rounded-3xl bg-light-text p-12">
     <div class="grid grid-cols-2">
-      <div
-        class="border-r border-white border-opacity-80 pr-12"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <h2 class="text-roboto mb-10 text-6xl font-medium text-white">
+      <div class="border-r border-white border-opacity-80 pr-12">
+        <h2 class="mb-10 font-roboto text-6xl font-medium text-white">
           {{ 'components.footer.title' | translate }}
         </h2>
         <p
-          class="font-lora text-lg font-semibold text-white opacity-80 md:text-xl"
+          class="font-nunito text-lg font-semibold text-white opacity-80 md:text-xl"
         >
           {{ 'components.footer.text' | translate }}
         </p>
@@ -18,7 +18,7 @@
       <lib-contact-form></lib-contact-form>
     </div>
     <div class="mt-8 flex justify-between pt-8">
-      <p class="text-sm text-white opacity-80">
+      <p class="font-nunito text-sm text-white opacity-80">
         &copy; {{ currentYear }}
         {{ 'components.footer.copyright' | translate }}.
       </p>

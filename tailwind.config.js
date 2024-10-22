@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
-        lora: ['Source Sans 3', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
       },
       colors: {
         light: {
@@ -14,7 +14,7 @@ module.exports = {
           bgSecondary: '#f3f4f7',
           text: '#2f2e2e',
           primary: '#1E90FF',
-          secondary: '#FF8A5B',
+          secondary: '#B0F2B6',
         },
         dark: {
           bgPrimary: '#ffffff',

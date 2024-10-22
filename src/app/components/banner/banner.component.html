@@ -7,27 +7,24 @@
         {{ 'components.banner.title' | translate }}
         <br />
         <span class="relative z-10 flex max-w-fit text-4xl"
-          ><img
-            class="absolute -left-10 h-6 min-w-96 translate-y-2.5 object-cover"
-            src="assets/images/brush.svg"
-            alt=""
-          /><span class="z-10">{{
+          ><span class="z-10">{{
             'components.banner.subTitle' | translate
           }}</span>
+          <span
+            class="absolute -bottom-1 -left-2 -right-2 h-6 bg-light-secondary"
+          ></span>
         </span>
       </h1>
     </div>
     <div data-aos="fade-up">
       <p
-        class="mb-5 mt-0 font-lora text-lg font-semibold leading-relaxed text-light-text md:text-2xl"
+        class="font-nunito mb-5 mt-0 text-lg font-semibold leading-relaxed text-light-text md:text-2xl"
         [innerHTML]="'components.banner.text' | translate"
       ></p>
       <div class="flex gap-5">
         <snip-main-button
           [buttonText]="'components.banner.button-text' | translate"
-        ></snip-main-button>
-        <snip-main-button
-          [buttonText]="'components.banner.button-text-2' | translate"
+          buttonLink="#projectsSection"
         ></snip-main-button>
       </div>
     </div>

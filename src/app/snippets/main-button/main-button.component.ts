@@ -6,8 +6,11 @@ import { AnimationService } from '../../services/animation.service';
   templateUrl: './main-button.component.html',
 })
 export class MainButtonComponent {
+  @Input() buttonLink: string = '';
   @Input() buttonText: string = '';
+  @Input() iconClass: string = '';
+  @Input() downloadFile: boolean = false;
   @ViewChild('linkElement') linkElement!: ElementRef;
 
-  constructor(private animationService: AnimationService) {}
+  constructor() {}
 }

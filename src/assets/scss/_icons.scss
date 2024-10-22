@@ -27,6 +27,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-download:before {
+  content: '\e902';
+}
 .icon-paper-plane:before {
   content: '\e900';
 }
@@ -38,6 +41,9 @@
 }
 .icon-arrow-right:before {
   content: '\ea3c';
+}
+.icon-arrow-down:before {
+  content: '\ea3e';
 }
 .icon-linkedin:before {
   content: '\eaca';

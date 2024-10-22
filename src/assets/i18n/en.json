@@ -87,7 +87,11 @@
     },
     "about": {
       "title": "About",
-      "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!"
+      "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!",
+      "resume-button": {
+        "button-text": "Download my resume",
+        "button-link": "/assets/images/brush.svg"
+      }
     },
     "contact-form": {
       "name": "Name",
@@ -98,6 +102,15 @@
         "name": "John Doe",
         "email": "johndoe@example.com",
         "message": "I would like to know more about..."
+      },
+      "required-fields": {
+        "name": "Please enter a name with 1 to 24 characters",
+        "email": "Please enter an email with the following format : john@doe.com",
+        "message": "Please leave a message so I can understand your needs"
+      },
+      "answer": {
+        "success": "Thank you for your message! Meet you soon.",
+        "error": "Sorry. An error has occurred. Try again later."
       }
     }
   }

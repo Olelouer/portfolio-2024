@@ -1,50 +1,105 @@
 <form
+  id="contactForm"
+  #contactForm="ngForm"
   class="contact-form flex flex-col gap-8 pl-12"
-  (submit)="sendEmail($event)"
-  data-aos="fade-up"
-  data-aos-delay="200"
+  (submit)="sendEmail($event, contactForm)"
+  *ngIf="!isSubmitted"
 >
   <div class="flex flex-col">
-    <label class="mb-4 font-bold uppercase text-white">{{
-      'components.contact-form.name' | translate
-    }}</label>
+    <label
+      class="mb-4 font-roboto font-bold uppercase tracking-wide text-white"
+    >
+      {{ 'components.contact-form.name' | translate }}
+    </label>
     <input
       type="text"
       name="user_name"
+      [(ngModel)]="username"
       required
       [placeholder]="'components.contact-form.placeholder.name' | translate"
-      class="pn-2 border-b border-white border-opacity-80 bg-transparent pb-2 pl-2 text-white placeholder-white placeholder-opacity-80 focus:outline-none"
+      class="pn-2 font-nunito border-b border-white border-opacity-80 bg-transparent pb-2 pl-2 text-white placeholder-white placeholder-opacity-80 focus:outline-none"
+      #userNameInput="ngModel"
+      minlength="1"
+      maxlength="100"
     />
+    <p
+      *ngIf="userNameInput.invalid && (userNameInput.touched || isSubmitting)"
+      class="font-nunito mt-1 text-red-500"
+    >
+      {{ 'components.contact-form.required-fields.name' | translate }}
+    </p>
   </div>
+
   <div class="flex flex-col">
-    <label class="mb-4 font-bold uppercase text-white">{{
-      'components.contact-form.email' | translate
-    }}</label>
+    <label
+      class="mb-4 font-roboto font-bold uppercase tracking-wide text-white"
+    >
+      {{ 'components.contact-form.email' | translate }}
+    </label>
     <input
       type="email"
       name="user_email"
+      [(ngModel)]="email"
       required
+      email
       [placeholder]="'components.contact-form.placeholder.email' | translate"
-      class="border-b border-white border-opacity-80 bg-transparent pb-2 pl-2 text-white placeholder-white placeholder-opacity-80 focus:outline-none"
+      class="font-nunito border-b border-white border-opacity-80 bg-transparent pb-2 pl-2 text-white placeholder-white placeholder-opacity-80 focus:outline-none"
+      #userEmailInput="ngModel"
+      minlength="5"
+      maxlength="254"
     />
-  </div>
-  <div class="flex flex-col">
-    <label class="mb-4 font-bold uppercase text-white">{{
-      'components.contact-form.message' | translate
-    }}</label>
-    <textarea
-      name="message"
-      required
-      [placeholder]="'components.contact-form.placeholder.message' | translate"
-      class="border-b border-white border-opacity-80 bg-transparent pb-2 pl-2 text-white placeholder-white placeholder-opacity-80 focus:outline-none"
-    ></textarea>
+    <p
+      *ngIf="userEmailInput.invalid && (userEmailInput.touched || isSubmitting)"
+      class="font-nunito mt-1 text-red-500"
+    >
+      {{ 'components.contact-form.required-fields.email' | translate }}
+    </p>
   </div>
 
+  <div class="flex flex-col">
+    <label
+      class="mb-4 font-roboto font-bold uppercase tracking-wide text-white"
+    >
+      {{ 'components.contact-form.message' | translate }}
+    </label>
+    <textarea
+      name="message"
+      [(ngModel)]="message"
+      required
+      [placeholder]="'components.contact-form.placeholder.message' | translate"
+      class="font-nunito border-b border-white border-opacity-80 bg-transparent pb-2 pl-2 text-white placeholder-white placeholder-opacity-80 focus:outline-none"
+      #messageInput="ngModel"
+      minlength="1"
+    ></textarea>
+    <p
+      *ngIf="messageInput.invalid && (messageInput.touched || isSubmitting)"
+      class="font-nunito mt-1 text-red-500"
+    >
+      {{ 'components.contact-form.required-fields.message' | translate }}
+    </p>
+  </div>
   <button
-    class="mt-2 flex items-center justify-center rounded-full bg-white px-10 py-4 text-lg font-bold text-black transition-all duration-300 hover:cursor-pointer hover:bg-opacity-70 hover:text-black"
+    class="relative flex items-center justify-center gap-4 rounded-full bg-white px-10 py-4 font-roboto text-xl font-bold text-black transition-all duration-300 hover:cursor-pointer hover:bg-opacity-70 hover:text-black"
     type="submit"
   >
-    <i class="icon-paper-plane mr-4"></i>
+    <i class="icon-paper-plane"></i>
     {{ 'components.contact-form.submit' | translate }}
+    <div class="absolute right-4 top-1/2 -translate-y-2/4">
+      <img
+        #spinner
+        src="assets/images/loader.svg"
+        class="h-4 w-4 animate-spin opacity-0"
+      />
+    </div>
   </button>
 </form>
+<ng-container *ngIf="isSubmitted">
+  <div class="m-auto flex h-full w-full items-center justify-center p-6">
+    <p *ngIf="isSuccess" class="text-center font-roboto text-3xl text-white">
+      {{ 'components.contact-form.answer.success' | translate }}
+    </p>
+    <p *ngIf="isError" class="text-center font-roboto text-3xl text-white">
+      {{ 'components.contact-form.answer.error' | translate }}
+    </p>
+  </div>
+</ng-container>

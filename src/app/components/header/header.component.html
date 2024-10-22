@@ -12,11 +12,20 @@
         />
       </div>
       <nav class="flex items-center gap-10">
-        <snip-link [linkText]="'components.header.about' | translate">
+        <snip-link
+          [linkText]="'components.header.about' | translate"
+          linkUrl="#aboutSection"
+        >
         </snip-link>
-        <snip-link [linkText]="'components.header.projects' | translate">
+        <snip-link
+          [linkText]="'components.header.projects' | translate"
+          linkUrl="#projectsSection"
+        >
         </snip-link>
-        <snip-main-button [buttonText]="'components.header.cta' | translate">
+        <snip-main-button
+          [buttonText]="'components.header.cta' | translate"
+          buttonLink="#contactForm"
+        >
         </snip-main-button>
       </nav>
     </div>
