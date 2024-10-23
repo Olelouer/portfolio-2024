@@ -1,10 +1,10 @@
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-project-card',
   templateUrl: './project-card.component.html',
 })
-export class ProjectCardComponent implements AfterViewInit {
+export class ProjectCardComponent {
   @Input() project: {
     title?: string;
     button?: {
@@ -14,10 +14,9 @@ export class ProjectCardComponent implements AfterViewInit {
     text?: string;
     excerpt?: string;
     types?: string[];
-    image?: string;
+    image?: {
+      src?: string;
+      alt?: string;
+    };
   } = {};
-
-  constructor() {}
-
-  ngAfterViewInit(): void {}
 }

@@ -5,15 +5,18 @@
     <!-- Front of the card -->
     <div class="flex flex-col gap-5 backface-hidden">
       <img
-        [src]="project.image"
-        alt="{{ project.title }}"
         *ngIf="project.image"
+        [src]="project.image.src"
+        [alt]="project.image.alt"
         class="rounded-3xl"
       />
-      <p class="font-roboto text-2xl font-semibold text-light-text">
+      <p
+        *ngIf="project.title"
+        class="font-roboto text-2xl font-semibold text-light-text"
+      >
         {{ project.title }}
       </p>
-      <div class="flex gap-3">
+      <div class="flex gap-3" *ngIf="project.types && project.types.length > 0">
         <span
           *ngFor="let type of project.types"
           class="text-color-text rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold"
@@ -25,13 +28,17 @@
     <!-- Back of the card -->
     <div
       class="absolute inset-8 flex rotate-y-180 flex-col justify-between gap-5 backface-hidden"
+      *ngIf="project.excerpt"
     >
-      <p class="font-nunito text-lg text-light-text">{{ project.excerpt }}</p>
+      <p *ngIf="project.excerpt" class="font-nunito text-lg text-light-text">
+        {{ project.excerpt }}
+      </p>
       <a
-        [href]="project.button?.link"
-        class="group/projectlink opacity-1 font-nunito ml-auto flex items-center gap-2 text-lg font-bold duration-300 hover:opacity-70 focus:opacity-70"
+        *ngIf="project.button"
+        [href]="project.button.link"
+        class="group/projectlink opacity-1 ml-auto flex items-center gap-2 font-nunito text-lg font-bold duration-300 hover:opacity-70 focus:opacity-70"
         target="_blank"
-        >{{ project.button?.title }}
+        >{{ project.button.title }}
         <i
           class="icon-arrow-up-right transform text-xs transition-transform duration-300 group-hover/projectlink:-translate-y-1 group-hover/projectlink:translate-x-1 group-focus/projectlink:-translate-y-1 group-focus/projectlink:translate-x-1"
         ></i

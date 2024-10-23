@@ -1,4 +1,8 @@
-<div id="projectsSection" class="my-20 px-4 lg:my-28">
+<div
+  id="projectsSection"
+  class="my-20 px-4 lg:my-28"
+  *ngIf="projectsList.length > 0"
+>
   <div class="container mx-auto">
     <h2
       class="mb-8 font-roboto text-3xl uppercase tracking-wide"
@@ -18,7 +22,7 @@
     </div>
 
     <!-- Remaining items in a grid of three -->
-    <div class="grid gap-10 lg:grid-cols-3">
+    <div class="grid gap-10 lg:grid-cols-3" *ngIf="projectsList.length > 2">
       <ng-container *ngFor="let project of projectsList; let i = index">
         <div *ngIf="i >= 2">
           <lib-project-card [project]="project"></lib-project-card>

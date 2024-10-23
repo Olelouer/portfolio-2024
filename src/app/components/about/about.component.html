@@ -10,7 +10,7 @@
           {{ 'components.about.title' | translate }}
         </h2>
         <p
-          class="font-nunito mb-8 text-lg"
+          class="mb-8 font-nunito text-lg"
           [innerHTML]="'components.about.intro' | translate"
         ></p>
         <div>
@@ -32,6 +32,7 @@
           <img
             class="contains mx-auto max-h-96"
             src="\assets\images\cut-character3.png"
+            [alt]="'components.about.profile-image.alt' | translate"
           />
         </div>
       </div>

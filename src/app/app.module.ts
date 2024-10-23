@@ -18,9 +18,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { MainButtonComponent } from './snippets/main-button/main-button.component';
 import { LinkComponent } from './snippets/link/link.component';
-import { ProjectCardComponent } from './components/project-card/project-card.component';
-import { LogosBannerComponent } from './components/logos-banner/logos-banner.component';
+import { ProjectCardComponent } from './components/cards/project-card/project-card.component';
+import { SkillsBannerComponent } from './components/skills-banner/skills-banner.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { SkillCardComponent } from './components/cards/skill-card/skill-card.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -38,8 +39,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     MainButtonComponent,
     LinkComponent,
     ProjectCardComponent,
-    LogosBannerComponent,
+    SkillsBannerComponent,
     ContactFormComponent,
+    SkillCardComponent,
   ],
   imports: [
     BrowserModule,
