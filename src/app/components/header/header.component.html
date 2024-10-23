@@ -2,16 +2,17 @@
   <div
     class="border-light flex w-full border-b bg-white px-5 py-3"
     data-aos="fade"
+    data-aos-delay="100"
   >
     <div class="container mx-auto flex items-center justify-between">
-      <div>
+      <a href="#banner">
         <img
           src="assets/images/logos/website-logo.jpg"
           class="h-16 object-contain"
           alt="Website logo"
         />
-      </div>
-      <nav class="flex items-center gap-10">
+      </a>
+      <nav class="hidden items-center gap-10 sm:flex">
         <snip-link
           [linkText]="'components.header.about' | translate"
           linkUrl="#aboutSection"
@@ -31,3 +32,4 @@
     </div>
   </div>
 </header>
+<lib-panel></lib-panel>

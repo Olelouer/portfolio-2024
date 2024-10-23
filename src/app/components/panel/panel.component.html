@@ -1,0 +1,21 @@
+<div class="fixed right-0 top-0 z-50 h-dvh sm:hidden">
+  <div class="h-full bg-light-bgSecondary px-8 pt-10">
+    <nav class="flex flex-col gap-10">
+      <snip-link
+        [linkText]="'components.header.about' | translate"
+        linkUrl="#aboutSection"
+      >
+      </snip-link>
+      <snip-link
+        [linkText]="'components.header.projects' | translate"
+        linkUrl="#projectsSection"
+      >
+      </snip-link>
+      <snip-main-button
+        [buttonText]="'components.header.cta' | translate"
+        buttonLink="#contactForm"
+      >
+      </snip-main-button>
+    </nav>
+  </div>
+</div>

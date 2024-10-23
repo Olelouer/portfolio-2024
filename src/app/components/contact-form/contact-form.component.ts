@@ -41,7 +41,6 @@ export class ContactFormComponent {
       )
       .then(
         () => {
-          console.log('SUCCESS');
           this.hideSpinner();
           form.reset();
           this.isSuccess = true;
@@ -77,11 +76,13 @@ export class ContactFormComponent {
     return true; // All checks passed
   }
 
+  // Show and animate the spinner
   showSpinner(): void {
     this.spinner.nativeElement.classList.add('animate-spin', 'opacity-1');
     this.spinner.nativeElement.classList.remove('opacity-0');
   }
 
+  // Hide and stop the spinner
   hideSpinner(): void {
     this.spinner.nativeElement.classList.remove('animate-spin', 'opacity-1');
     this.spinner.nativeElement.classList.add('opacity-0');

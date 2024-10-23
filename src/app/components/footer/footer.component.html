@@ -1,23 +1,27 @@
-<footer
-  class="lg:mb- mt-20 px-4 pb-4 lg:mt-28"
-  data-aos="fade"
-  data-aos-delay="200"
->
-  <div class="bg- container mx-auto rounded-3xl bg-light-text p-12">
-    <div class="grid grid-cols-2">
-      <div class="border-r border-white border-opacity-80 pr-12">
-        <h2 class="mb-10 font-roboto text-6xl font-medium text-white">
+<footer class="mt-20 px-4 pb-4 lg:mt-28" data-aos="fade" data-aos-delay="100">
+  <div
+    class="container mx-auto rounded-3xl bg-light-text px-4 py-8 md:p-10 lg:p-12"
+  >
+    <div class="grid lg:grid-cols-2">
+      <div
+        class="mb-9 flex flex-col gap-6 border-b border-white border-opacity-80 pb-9 md:mb-12 md:pb-12 lg:mb-0 lg:gap-10 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-12"
+      >
+        <h2
+          class="font-roboto text-3xl font-medium text-white md:text-4xl lg:text-5xl xl:text-6xl"
+        >
           {{ 'components.footer.title' | translate }}
         </h2>
         <p
-          class="font-nunito text-lg font-semibold text-white opacity-80 md:text-xl"
+          class="font-nunito text-base font-semibold text-white opacity-80 md:text-lg xl:text-xl"
         >
           {{ 'components.footer.text' | translate }}
         </p>
       </div>
       <lib-contact-form></lib-contact-form>
     </div>
-    <div class="mt-8 flex justify-between pt-8">
+    <div
+      class="mt-8 flex flex-col-reverse justify-between gap-6 pt-8 sm:flex-row"
+    >
       <p class="font-nunito text-sm text-white opacity-80">
         &copy; {{ currentYear }}
         {{ 'components.footer.copyright' | translate }}.

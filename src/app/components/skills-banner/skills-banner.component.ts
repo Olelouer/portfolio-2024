@@ -7,7 +7,9 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class SkillsBannerComponent {
   skillsList: Array<any> = [];
+
   constructor(private translate: TranslateService) {}
+
   ngOnInit(): void {
     this.translate.get('components.skills-banner').subscribe((res: any) => {
       this.skillsList = res;

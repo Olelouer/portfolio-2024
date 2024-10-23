@@ -22,6 +22,7 @@ import { ProjectCardComponent } from './components/cards/project-card/project-ca
 import { SkillsBannerComponent } from './components/skills-banner/skills-banner.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { SkillCardComponent } from './components/cards/skill-card/skill-card.component';
+import { PanelComponent } from './components/panel/panel.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -42,6 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SkillsBannerComponent,
     ContactFormComponent,
     SkillCardComponent,
+    PanelComponent,
   ],
   imports: [
     BrowserModule,

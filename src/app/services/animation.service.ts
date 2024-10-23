@@ -21,7 +21,7 @@ export class AnimationService {
     let startIndex = 0;
     let endIndex = array.length - 1;
     // Set the length the interval time regarding the number of items in the array set to 300ms animation
-    let intervalTime = 300 / array.length;
+    let intervalTime = 400 / array.length;
     // Initialize the first iteration
     let currentIteration = 0;
 

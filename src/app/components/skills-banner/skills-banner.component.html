@@ -1,8 +1,9 @@
-<div
-  class="container mx-auto my-16 grid grid-cols-6 gap-20 rounded-3xl bg-light-bgSecondary p-12"
-  data-aos="fade-up"
->
-  <ng-container *ngFor="let skill of skillsList">
-    <lib-skill-card [skill]="skill"></lib-skill-card>
-  </ng-container>
+<div class="px-4" data-aos="fade" data-aos-delay="100">
+  <div
+    class="container mx-auto my-16 grid grid-cols-2 gap-8 gap-y-14 rounded-3xl bg-light-bgSecondary px-4 py-8 sm:grid-cols-3 md:gap-x-14 md:gap-y-20 md:p-10 lg:grid-cols-6 lg:gap-20 lg:p-12"
+  >
+    <ng-container *ngFor="let skill of skillsList">
+      <lib-skill-card [skill]="skill"></lib-skill-card>
+    </ng-container>
+  </div>
 </div>

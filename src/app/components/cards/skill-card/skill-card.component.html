@@ -1,21 +1,20 @@
 <div class="flex h-full flex-col items-center gap-4">
   <div class="flex w-full flex-col items-center">
-    <h3 *ngIf="skill.title" class="font-roboto font-bold">
+    <p *ngIf="skill.title" class="font-roboto font-bold">
       {{ skill.title }}
-    </h3>
+    </p>
     <div
       *ngIf="skill.level && skill.barLevel"
       class="flex w-full flex-col items-center"
     >
       <div class="my-2 h-2 w-full rounded-full bg-light-text bg-opacity-20">
         <div
-          class="h-2 rounded-full bg-light-primary"
-          [ngStyle]="{ width: skill.barLevel + '%' }"
+          #progressBar
+          class="h-2 w-0 rounded-full bg-light-primary delay-500 duration-500"
         >
           <span class="sr-only">{{ skill.barLevel }}%</span>
         </div>
       </div>
-
       <p for="skillBar" class="w-full text-center font-nunito text-sm">
         {{ skill.level }}
       </p>
@@ -23,7 +22,7 @@
   </div>
   <img
     *ngIf="skill.logo"
-    class="m-auto w-[70%]"
+    class="m-auto w-[70%] lg:w-[100%] xl:w-[70%]"
     [src]="skill.logo.src"
     [alt]="skill.logo.alt"
   />
