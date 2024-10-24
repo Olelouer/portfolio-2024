@@ -13,21 +13,9 @@
       {{ 'components.projects.title' | translate }}
     </h2>
 
-    <!-- First two items in a grid of two -->
     <div class="mb-10 grid gap-10 lg:grid-cols-2">
-      <ng-container *ngFor="let project of projectsList; let i = index">
-        <div *ngIf="i < 2">
-          <lib-project-card [project]="project"></lib-project-card>
-        </div>
-      </ng-container>
-    </div>
-
-    <!-- Remaining items in a grid of three -->
-    <div class="grid gap-10 lg:grid-cols-3" *ngIf="projectsList.length > 2">
-      <ng-container *ngFor="let project of projectsList; let i = index">
-        <div *ngIf="i >= 2">
-          <lib-project-card [project]="project"></lib-project-card>
-        </div>
+      <ng-container *ngFor="let project of projectsList">
+        <lib-project-card [project]="project"></lib-project-card>
       </ng-container>
     </div>
   </div>
