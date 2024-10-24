@@ -14,19 +14,19 @@
         [alt]="project.image.alt"
         class="rounded-xl md:rounded-2xl"
       />
-      <p
+      <h3
         *ngIf="project.title"
-        class="font-roboto text-xl font-semibold text-light-text sm:text-2xl"
+        class="text-light-title font-roboto text-xl font-semibold sm:text-2xl"
       >
         {{ project.title }}
-      </p>
+      </h3>
       <div
         class="flex flex-wrap gap-3"
         *ngIf="project.types && project.types.length > 0"
       >
         <span
           *ngFor="let type of project.types"
-          class="text-color-text rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold sm:text-base"
+          class="rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold text-light-text sm:text-base"
         >
           {{ type }}
         </span>
@@ -46,7 +46,7 @@
       <a
         *ngIf="project.button"
         [href]="project.button.link"
-        class="group/projectlink opacity-1 ml-auto flex items-center gap-2 font-nunito text-base font-bold duration-300 hover:opacity-70 focus:opacity-70 md:text-lg"
+        class="group/projectlink opacity-1 ml-auto flex items-center gap-2 font-nunito text-base font-bold text-light-text duration-300 hover:opacity-70 focus:opacity-70 md:text-lg"
         target="_blank"
         >{{ project.button.title }}
         <i

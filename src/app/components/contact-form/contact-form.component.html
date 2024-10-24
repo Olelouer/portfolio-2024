@@ -8,10 +8,12 @@
   <div class="flex flex-col">
     <label
       class="mb-4 font-roboto font-bold uppercase tracking-wide text-white"
+      for="user_name"
     >
       {{ 'components.contact-form.name' | translate }}
     </label>
     <input
+      id="user_name"
       type="text"
       name="user_name"
       [(ngModel)]="username"
@@ -33,10 +35,12 @@
   <div class="flex flex-col">
     <label
       class="mb-4 font-roboto font-bold uppercase tracking-wide text-white"
+      for="user_email"
     >
       {{ 'components.contact-form.email' | translate }}
     </label>
     <input
+      id="user_email"
       type="email"
       name="user_email"
       [(ngModel)]="email"
@@ -59,10 +63,12 @@
   <div class="flex flex-col">
     <label
       class="mb-4 font-roboto font-bold uppercase tracking-wide text-white"
+      for="message"
     >
       {{ 'components.contact-form.message' | translate }}
     </label>
     <textarea
+      id="message"
       name="message"
       [(ngModel)]="message"
       required
@@ -79,7 +85,7 @@
     </p>
   </div>
   <button
-    class="relative flex items-center justify-center gap-4 rounded-full bg-white px-10 py-4 font-roboto font-bold text-black transition-all duration-300 hover:cursor-pointer hover:bg-opacity-70 hover:text-black md:text-lg xl:text-xl"
+    class="relative flex items-center justify-center gap-4 rounded-full bg-white px-10 py-4 font-roboto font-bold text-light-text transition-all duration-300 hover:cursor-pointer hover:bg-opacity-70 md:text-lg xl:text-xl"
     type="submit"
   >
     <i class="icon-paper-plane"></i>
@@ -89,6 +95,7 @@
         #spinner
         src="assets/images/loader.svg"
         class="h-4 w-4 animate-spin opacity-0"
+        alt=""
       />
     </div>
   </button>

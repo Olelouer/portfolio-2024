@@ -4,6 +4,7 @@
     (click)="togglePanel()"
     class="fixed right-4 top-4 z-50 rounded bg-light-bgSecondary p-3 sm:hidden"
     aria-label="Toggle menu"
+    [attr.aria-expanded]="isOpen ? 'true' : 'false'"
   >
     <div class="space-y-2">
       <span
@@ -42,6 +43,8 @@
     [class.invisible]="!isOpen"
     [class.translate-x-0]="isOpen"
     [class.translate-x-full]="!isOpen"
+    role="dialog"
+    [attr.aria-hidden]="isOpen ? 'false' : 'true'"
   >
     <div class="h-full bg-light-bgSecondary px-8 pt-24">
       <nav class="flex flex-col gap-6">

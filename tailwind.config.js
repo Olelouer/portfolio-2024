@@ -12,6 +12,7 @@ module.exports = {
         light: {
           bgPrimary: '#ffffff',
           bgSecondary: '#f3f4f7',
+          title: '#2f2e2e',
           text: '#2f2e2e',
           primary: '#1E90FF',
           secondary: '#B0F2B6',
