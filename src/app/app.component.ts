@@ -10,7 +10,7 @@ import * as AOS from 'aos';
 export class AppComponent {
   private defaultLanguage: string = 'fr';
   title: string = '';
-  description: string = ''; // Initialize the description property
+  description: string = '';
 
   constructor(private translateService: TranslateService) {
     this.translateService.setDefaultLang(this.defaultLanguage);
@@ -27,7 +27,7 @@ export class AppComponent {
     // Set the meta description using translation
     this.translateService.get('meta.description').subscribe((res: string) => {
       this.description = res;
-      this.setMetaDescription(this.description); // Set the meta description
+      this.setMetaDescription(this.description);
     });
   }
 

@@ -5,6 +5,7 @@ import {
   ViewChild,
   HostListener,
 } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'lib-header',
@@ -14,6 +15,12 @@ export class HeaderComponent implements AfterViewInit {
   @ViewChild('headerHtml') headerHtml!: ElementRef;
   private previousPosition: number = 0;
   private headerHeight: number = 0;
+
+  constructor(private translateService: TranslateService) {}
+
+  get currentLang(): string {
+    return this.translateService.currentLang;
+  }
 
   ngAfterViewInit(): void {
     this.calculateHeaderHeight();
@@ -41,5 +48,11 @@ export class HeaderComponent implements AfterViewInit {
 
   calculateHeaderHeight() {
     this.headerHeight = this.headerHtml.nativeElement.offsetHeight;
+  }
+
+  // Save selected language to local storage
+  changeLanguage(lang: string): void {
+    this.translateService.use(lang);
+    localStorage.setItem('lang', lang);
   }
 }

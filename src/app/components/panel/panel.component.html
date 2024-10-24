@@ -66,6 +66,20 @@
           (click)="closePanel()"
         >
         </snip-main-button>
+        <div class="language-switcher">
+          <a
+            class="font-roboto text-base font-bold text-light-text transition-all duration-300 hover:cursor-pointer hover:opacity-75 md:text-lg xl:text-xl"
+            *ngIf="currentLang === 'fr'"
+            (click)="changeLanguage('en')"
+            >EN</a
+          >
+          <a
+            class="font-roboto text-base font-bold text-light-text transition-all duration-300 hover:cursor-pointer hover:opacity-75 md:text-lg xl:text-xl"
+            *ngIf="currentLang === 'en'"
+            (click)="changeLanguage('fr')"
+            >FR</a
+          >
+        </div>
       </nav>
     </div>
   </div>

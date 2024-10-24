@@ -16,6 +16,20 @@
         />
       </a>
       <nav class="hidden items-center gap-10 sm:flex">
+        <div class="language-switcher">
+          <a
+            class="font-roboto text-base font-bold text-light-text transition-all duration-300 hover:cursor-pointer hover:opacity-75 md:text-lg xl:text-xl"
+            *ngIf="currentLang === 'fr'"
+            (click)="changeLanguage('en')"
+            >EN</a
+          >
+          <a
+            class="font-roboto text-base font-bold text-light-text transition-all duration-300 hover:cursor-pointer hover:opacity-75 md:text-lg xl:text-xl"
+            *ngIf="currentLang === 'en'"
+            (click)="changeLanguage('fr')"
+            >FR</a
+          >
+        </div>
         <snip-link
           [linkText]="'components.header.about' | translate"
           linkUrl="#aboutSection"

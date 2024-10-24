@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Olivier Le Louër - Développeur Full-Stack",
+    "description": "Olivier Le Louër - Développeur Full-Stack"
+  },
   "components": {
     "about": {
       "title": "About",
@@ -13,10 +17,10 @@
     },
     "banner": {
       "title": "Olivier Le Louër",
-      "subTitle": "Front-end Developer",
+      "subTitle": "Full-end Developer",
       "text": "Passionate Front-End Developer adept at sculpting seamless digital experiences with Angular and WordPress, ready to turn your web dreams into captivating realities.",
       "button-text": "Watch my work",
-      "button-text-2": "Download my resume"
+      "alt-logo": "Logo du site internet"
     },
     "contact-form": {
       "name": "Name",
@@ -172,6 +176,7 @@
     }
   },
   "links": {
-    "linkedin": "www.linkedin.com/in/olivier-le-louer"
+    "linkedin": "https://www.linkedin.com/in/olivier-le-louer",
+    "linkedin-label": "Visitez ma page linkedin"
   }
 }

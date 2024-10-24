@@ -1,112 +1,110 @@
 {
   "meta": {
     "title": "Olivier Le Louër - Développeur Full-Stack",
-    "description": "Olivier Le Louër - Développeur Full-Stack"
+    "description": "Développeur Front-end avec 2 ans d'expérience au Canada, je me forme au full-stack en Angular et Java. Prêt à relever de nouveaux défis et à contribuer à des projets innovants"
   },
   "components": {
     "about": {
-      "title": "About",
-      "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!",
+      "title": "À propos",
+      "intro": "Avec plus de 2 ans d'expérience en tant que Développeur Front-end au Canada, j'ai conçu des applications avec Angular pour 7 agences immobilières et créé 8 thèmes WordPress sur mesure. Je suis actuellement à la recherche d'une alternance pour débuter une formation en développement Full-stack. <br /> <br /> Je maîtrise déjà Angular, ainsi que des technologies comme JavaScript, HTML, SCSS et PHP, ce qui me permet de développer des applications et des interfaces efficaces. Je suis enthousiaste à l'idée de rejoindre une équipe où je pourrai mettre en pratique mes compétences tout en apprenant de nouvelles technologies et méthodes de travail. Mon objectif est d'optimiser l'expérience utilisateur et d'apporter une réelle valeur à votre projet.",
       "resume-button": {
-        "button-text": "Download my resume",
-        "button-link": "/assets/images/brush.svg"
+        "button-text": "Télécharger mon CV",
+        "button-link": "/assets/images/cv-olivier-le-louer-fr.pdf"
       },
       "profile-image": {
-        "alt": "Photo of Olivier"
+        "alt": "Photo d'Olivier"
       }
     },
     "banner": {
       "title": "Olivier Le Louër",
-      "subTitle": "Front-end Developer",
-      "text": "Passionate Front-End Developer adept at sculpting seamless digital experiences with Angular and WordPress, ready to turn your web dreams into captivating realities.",
-      "button-text": "Watch my work",
-      "button-text-2": "Download my resume",
+      "subTitle": "Développeur Full-stack",
+      "text": "Développeur Front-end avec plus de 2 ans d'expérience, je me prépare à devenir Développeur Full-stack. Passionné par les défis techniques, je suis prêt à contribuer à des projets innovants.",
+      "button-text": "Découvrez mes réalisations",
       "alt-logo": "Logo du site internet"
     },
     "contact-form": {
-      "name": "Name",
+      "name": "Nom",
       "email": "Email",
       "message": "Message",
-      "submit": "Send",
+      "submit": "Envoyer",
       "placeholder": {
-        "name": "John Doe",
-        "email": "johndoe@example.com",
-        "message": "I would like to know more about..."
+        "name": "Jean Dupont",
+        "email": "jeandupont@exemple.com",
+        "message": "Je souhaiterais en savoir plus sur..."
       },
       "required-fields": {
-        "name": "Please enter a name with 1 to 24 characters",
-        "email": "Please enter an email with the following format : john@doe.com",
-        "message": "Please leave a message so I can understand your needs"
+        "name": "Veuillez entrer un nom de 1 à 24 caractères",
+        "email": "Veuillez entrer un email au format suivant : jean@dupont.com",
+        "message": "Veuillez laisser un message afin que je puisse comprendre vos besoins"
       },
       "answer": {
-        "success": "Thank you for your message! Meet you soon.",
-        "error": "Sorry. An error has occurred. Try again later."
+        "success": "Merci pour votre message ! À bientôt.",
+        "error": "Désolé. Une erreur est survenue. Veuillez réessayer plus tard."
       }
     },
     "footer": {
-      "title": "Want to join me",
-      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!",
-      "copyright": "Olivier Le Louër. All rights reserved"
+      "title": "Envie de collaborer ?",
+      "text": "Vous cherchez un futur développeur full-stack ? Je suis en recherche d'une alternance pour approfondir mes compétences et relever de nouveaux défis. N'hésitez pas à me contacter pour discuter de vos projets et découvrir comment je peux contribuer à votre équipe.",
+      "copyright": "Olivier Le Louër. Tous droits réservés."
     },
     "header": {
-      "about": "About",
-      "projects": "Projects",
-      "contact": "Contact",
-      "cta": "Contact me"
+      "about": "À propos",
+      "projects": "Projets",
+      "cta": "Contactez-moi"
     },
     "skills-banner": [
       {
         "title": "Angular",
         "logo": {
           "src": "assets/images/logos/angular-logo.svg",
-          "alt": "Angular logo"
+          "alt": "Logo Angular"
         },
-        "level": "Professional experience",
+        "level": "Expérience professionnelle",
         "barLevel": "80"
       },
       {
-        "title": "Javascript",
+        "title": "JavaScript",
         "logo": {
           "src": "assets/images/logos/javascript-logo.svg",
-          "alt": "Javascript logo"
+          "alt": "Logo JavaScript"
         },
-        "level": "Professional experience",
+        "level": "Expérience professionnelle",
         "barLevel": "80"
       },
       {
         "title": "Java",
         "logo": {
           "src": "assets/images/logos/java-logo.svg",
-          "alt": "Java logo"
+          "alt": "Logo Java"
         },
-        "level": "In training",
+        "level": "En formation",
         "barLevel": "30"
       },
       {
         "title": "Sass",
         "logo": {
           "src": "assets/images/logos/sass-logo.svg",
-          "alt": "Sass logo"
+          "alt": "Logo Sass"
         },
-        "level": "Professional experience",
+        "level": "Expérience professionnelle",
         "barLevel": "90"
       },
       {
         "title": "PHP",
         "logo": {
           "src": "assets/images/logos/php-logo.svg",
-          "alt": "PHP logo"
+          "alt": "Logo PHP"
         },
-        "level": "Basic professional experience",
+        "level": "Expérience professionnelle de base",
         "barLevel": "50"
       },
       {
-        "title": "Wordpress",
+        "title": "WordPress",
         "logo": {
           "src": "assets/images/logos/wordpress-blue-logo.svg",
-          "alt": "Wordpress logo"
+          "alt": "Logo WordPress"
         },
-        "level": "Professional experience",
+        "level": "Expérience professionnelle",
         "barLevel": "80"
       }
     ],
