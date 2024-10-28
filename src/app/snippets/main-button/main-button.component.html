@@ -4,7 +4,7 @@
     [attr.download]="downloadFile ? '' : null"
     [target]="downloadFile ? '_blank' : ''"
     [href]="buttonLink"
-    class="relative flex items-center justify-center gap-2 overflow-hidden rounded bg-light-primary px-7 py-3 text-center text-lg font-bold text-white duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-0 after:bg-black after:duration-300 hover:text-white hover:after:w-full focus:text-white focus:after:w-full lg:px-7 lg:py-4 xl:text-xl"
+    class="relative flex items-center justify-center gap-2 overflow-hidden rounded bg-light-primary px-7 py-3 text-center text-xl font-bold text-white duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-0 after:bg-black after:duration-300 hover:text-white hover:after:w-full focus:text-white focus:after:w-full lg:px-7 lg:py-4"
   >
     <span class="relative z-10 font-roboto">{{ buttonText }}</span>
     <i *ngIf="downloadFile" class="icon-download relative z-10 text-xl"></i>
