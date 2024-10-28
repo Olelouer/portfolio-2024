@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "Olivier Le Louër - Développeur Full-Stack",
-    "description": "Olivier Le Louër - Développeur Full-Stack"
+    "title": "Olivier Le Louër - Full-Stack Developer",
+    "description": "Front-end developer with 2 years of experience in Canada, currently training in full-stack with Angular and Java. Ready to take on new challenges and contribute to innovative projects."
   },
   "components": {
     "about": {
       "title": "About",
-      "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!",
+      "intro": "With over 2 years of experience as a Front-end Developer in Canada, I have designed applications with Angular for 7 real estate agencies and created 8 custom WordPress themes. I am currently seeking an apprenticeship to start training in Full-stack development. <br /> <br /> I am already proficient in Angular, as well as technologies like JavaScript, HTML, SCSS, and PHP, allowing me to develop efficient applications and interfaces. I am excited to join a team where I can apply my skills while learning new technologies and working methods. My goal is to optimize user experience and bring real value to your project.",
       "resume-button": {
-        "button-text": "Download my resume",
-        "button-link": "/assets/images/brush.svg"
+        "button-text": "Download my Resume",
+        "button-link": ""
       },
       "profile-image": {
         "alt": "Photo of Olivier"
@@ -17,10 +17,10 @@
     },
     "banner": {
       "title": "Olivier Le Louër",
-      "subTitle": "Full-end Developer",
-      "text": "Passionate Front-End Developer adept at sculpting seamless digital experiences with Angular and WordPress, ready to turn your web dreams into captivating realities.",
-      "button-text": "Watch my work",
-      "alt-logo": "Logo du site internet"
+      "subTitle": "Full-stack Developer",
+      "text": "Front-end developer with over 2 years of experience, preparing to become a Full-stack Developer. Passionate about technical challenges, I am ready to contribute to innovative projects.",
+      "button-text": "Discover my work",
+      "alt-logo": "Website logo"
     },
     "contact-form": {
       "name": "Name",
@@ -33,143 +33,138 @@
         "message": "I would like to know more about..."
       },
       "required-fields": {
-        "name": "Please enter a name with 1 to 24 characters",
-        "email": "Please enter an email with the following format : john@doe.com",
+        "name": "Please enter a name between 1 and 24 characters",
+        "email": "Please enter an email in the following format: john@doe.com",
         "message": "Please leave a message so I can understand your needs"
       },
       "answer": {
-        "success": "Thank you for your message! Meet you soon.",
-        "error": "Sorry. An error has occurred. Try again later."
+        "success": "Thank you for your message! See you soon.",
+        "error": "Sorry. An error occurred. Please try again later."
       }
     },
     "footer": {
-      "title": "Want to join me",
-      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quas, amet quisquam veniam vitae officia labore deserunt magnam commodi, in laboriosam eum nihil quos optiocum sed repudiandae quidem atque!",
-      "copyright": "Olivier Le Louër. All rights reserved"
+      "title": "Interested in collaborating?",
+      "text": "Are you looking for a future full-stack developer? I am seeking an apprenticeship to deepen my skills and take on new challenges. Feel free to contact me to discuss your projects and explore how I can contribute to your team.",
+      "copyright": "Olivier Le Louër. All rights reserved."
     },
     "header": {
       "about": "About",
       "projects": "Projects",
-      "contact": "Contact",
-      "cta": "Contact me"
+      "cta": "Contact Me"
     },
     "skills-banner": [
-      {
-        "title": "Angular",
-        "logo": {
-          "src": "assets/images/logos/angular-logo.svg",
-          "alt": "Angular logo"
-        },
-        "level": "Professional experience",
-        "barLevel": "80"
-      },
-      {
-        "title": "Javascript",
-        "logo": {
-          "src": "assets/images/logos/javascript-logo.svg",
-          "alt": "Javascript logo"
-        },
-        "level": "Professional experience",
-        "barLevel": "80"
-      },
-      {
-        "title": "Java",
-        "logo": {
-          "src": "assets/images/logos/java-logo.svg",
-          "alt": "Java logo"
-        },
-        "level": "In training",
-        "barLevel": "30"
-      },
       {
         "title": "Sass",
         "logo": {
           "src": "assets/images/logos/sass-logo.svg",
-          "alt": "Sass logo"
+          "alt": "Sass Logo"
         },
         "level": "Professional experience",
         "barLevel": "90"
       },
       {
+        "title": "Angular",
+        "logo": {
+          "src": "assets/images/logos/angular-logo.svg",
+          "alt": "Angular Logo"
+        },
+        "level": "Professional experience",
+        "barLevel": "80"
+      },
+      {
+        "title": "JavaScript",
+        "logo": {
+          "src": "assets/images/logos/javascript-logo.svg",
+          "alt": "JavaScript Logo"
+        },
+        "level": "Professional experience",
+        "barLevel": "80"
+      },
+      {
+        "title": "WordPress",
+        "logo": {
+          "src": "assets/images/logos/wordpress-blue-logo.svg",
+          "alt": "WordPress Logo"
+        },
+        "level": "Professional experience",
+        "barLevel": "80"
+      },
+      {
         "title": "PHP",
         "logo": {
           "src": "assets/images/logos/php-logo.svg",
-          "alt": "PHP logo"
+          "alt": "PHP Logo"
         },
         "level": "Basic professional experience",
         "barLevel": "50"
       },
       {
-        "title": "Wordpress",
+        "title": "Java",
         "logo": {
-          "src": "assets/images/logos/wordpress-blue-logo.svg",
-          "alt": "Wordpress logo"
+          "src": "assets/images/logos/java-logo.svg",
+          "alt": "Java Logo"
         },
-        "level": "Professional experience",
-        "barLevel": "80"
+        "level": "In training",
+        "barLevel": "30"
       }
     ],
     "projects": {
       "title": "Projects",
-      "filters": {
-        "all": "All",
-        "list": ["Angular", "WordPress"]
-      },
       "projects": [
         {
-          "title": "Station SME",
-          "text": "I am the text",
-          "excerpt": "Excerpt is there",
-          "types": ["Wordpress", "Twig", "PHP", "SCSS"],
+          "title": "Station SME (Student Mental Health)",
+          "text": "",
+          "excerpt": "<p>I independently developed the <strong>Station SME</strong> website, a platform dedicated to student mental health, using WordPress. The project integrates <strong>Twig</strong> for templating, <strong>PHP</strong> for routing and hooks, as well as <strong>JavaScript</strong> and <strong>Sass</strong> for styling and animations.</p><br /><p><strong>Challenges:</strong></p><div><li>Create an attractive site with smooth animations that is fully customizable by the client.</li><li>Implement advanced search with <strong>AddSearch</strong> to allow users to quickly find information across all posts.</li></div>",
+          "types": ["WordPress", "Twig", "PHP", "JavaScript", "Sass"],
           "button": {
-            "link": "https://stationsme.ca/en/",
-            "title": "Link to the SME Station"
+            "link": "https://stationsme.ca/en",
+            "title": "Link to Station SME"
           },
           "image": {
-            "src": "assets/images/stationsme.png",
-            "alt": "Station SME homepage banner"
+            "src": "assets/images/projects/stationsme-en.webp",
+            "alt": "Station SME homepage"
+          }
+        },
+        {
+          "title": "Donovan Team",
+          "text": "",
+          "excerpt": "<p>For the Donovan Team site, I developed a website for a Quebec real estate agency using <strong>Angular</strong> with <strong>Sass</strong> styles, as part of the e-closion solution provided by Kryzalid in Montreal. This site combines customization and modularity to meet the specific needs of the client while adhering to the e-closion structure.</p><br/><p><strong>Challenges:</strong></p><div><li>Creating a unique site reflecting the client's image while maintaining consistency with the e-closion solution structure.</li><li>Continuously improving the e-closion solution to better meet the specific needs of real estate agencies.</li></div>",
+          "types": ["Angular", "Sass"],
+          "button": {
+            "link": "https://www.equipedonovan.com/en",
+            "title": "Link to Donovan Team"
+          },
+          "image": {
+            "src": "assets/images/projects/donovan-en.webp",
+            "alt": "Homepage of the Donovan Team"
+          }
+        },
+        {
+          "title": "Contest Management Platform for the University of Montreal",
+          "text": "",
+          "excerpt": "<p>For the University of Montreal, I co-developed a contest platform using <strong>Vue.js</strong> and <strong>Laravel</strong> via <strong>Inertia</strong>. This application allows students to view available contests, register online, and track their current or past registrations.</p><br/><p><strong>Challenges:</strong></p><div><li>Validating contest statuses to display relevant information (open, ongoing, closed).</li><li>Managing the student journey: submission and validation of documents related to each contest.</li></div>",
+          "types": ["Vue.js", "PHP", "Sass"],
+          "button": {
+            "link": "https://www.umontreal.ca/en",
+            "title": "Link to the University of Montreal"
+          },
+          "image": {
+            "src": "assets/images/logos/udem-logo.svg",
+            "alt": "UdeM Logo"
           }
         },
         {
           "title": "Via Prévention",
-          "text": "I am the text",
-          "excerpt": "Excerpt the return",
-          "types": ["Wordpress", "Twig", "PHP", "SCSS"],
+          "text": "",
+          "excerpt": "<p>For Via Prévention, I designed a customizable website on <strong>WordPress</strong>, allowing the client to easily manage their content. The project integrates <strong>PHP</strong> for routing, hooks, and database calls, <strong>Twig</strong> for templating, as well as <strong>JavaScript</strong> and <strong>Sass</strong> for dynamic animations. The site also supports ordering training sessions and documents, with an automated order form creation.</p><br/><p><strong>Challenges:</strong></p><div><li>Creating an engaging, colorful, and customizable site according to the client’s needs.</li><li>Online ordering functionality for training sessions and documents, including an automated order form generation system.</li></div>",
+          "types": ["WordPress", "Twig", "PHP", "JavaScript", "Sass"],
           "button": {
             "link": "https://viaprevention.com/",
             "title": "Link to Via Prévention"
           },
           "image": {
-            "src": "assets/images/stationsme.png",
-            "alt": "Station SME homepage banner"
-          }
-        },
-        {
-          "title": "Martine Deschesnes",
-          "text": "I am the text",
-          "excerpt": "Excerpt the re-return",
-          "types": ["Angular", "SCSS"],
-          "button": {
-            "link": "https://www.martinedeschesnes.com/en",
-            "title": "Link to Martine Deschesnes"
-          },
-          "image": {
-            "src": "assets/images/stationsme.png",
-            "alt": "Station SME homepage banner"
-          }
-        },
-        {
-          "title": "Martine Deschesnes",
-          "text": "I am the text",
-          "excerpt": "Excerpt the re-return",
-          "types": ["Angular", "SCSS"],
-          "button": {
-            "link": "https://www.martinedeschesnes.com/en",
-            "title": "Link to Martine Deschesnes"
-          },
-          "image": {
-            "src": "assets/images/stationsme.png",
-            "alt": "Station SME homepage banner"
+            "src": "assets/images/projects/vp.webp",
+            "alt": "Homepage of Via Prévention"
           }
         }
       ]
@@ -177,6 +172,6 @@
   },
   "links": {
     "linkedin": "https://www.linkedin.com/in/olivier-le-louer",
-    "linkedin-label": "Visitez ma page linkedin"
+    "linkedin-label": "Visit my LinkedIn page"
   }
 }

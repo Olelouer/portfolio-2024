@@ -54,6 +54,15 @@
     },
     "skills-banner": [
       {
+        "title": "Sass",
+        "logo": {
+          "src": "assets/images/logos/sass-logo.svg",
+          "alt": "Logo Sass"
+        },
+        "level": "Expérience professionnelle",
+        "barLevel": "90"
+      },
+      {
         "title": "Angular",
         "logo": {
           "src": "assets/images/logos/angular-logo.svg",
@@ -70,15 +79,6 @@
         },
         "level": "Expérience professionnelle",
         "barLevel": "80"
-      },
-      {
-        "title": "Sass",
-        "logo": {
-          "src": "assets/images/logos/sass-logo.svg",
-          "alt": "Logo Sass"
-        },
-        "level": "Expérience professionnelle",
-        "barLevel": "90"
       },
       {
         "title": "WordPress",
@@ -109,11 +109,7 @@
       }
     ],
     "projects": {
-      "title": "Projects",
-      "filters": {
-        "all": "All",
-        "list": ["Angular", "WordPress"]
-      },
+      "title": "Projets",
       "projects": [
         {
           "title": "Station SME (Santé Mentale Étudiante)",
