@@ -9,7 +9,7 @@
       "intro": "Avec plus de 2 ans d'expérience en tant que Développeur Front-end au Canada, j'ai conçu des applications avec Angular pour 7 agences immobilières et créé 8 thèmes WordPress sur mesure. Je suis actuellement à la recherche d'une alternance pour débuter une formation en développement Full-stack. <br /> <br /> Je maîtrise déjà Angular, ainsi que des technologies comme JavaScript, HTML, SCSS et PHP, ce qui me permet de développer des applications et des interfaces efficaces. Je suis enthousiaste à l'idée de rejoindre une équipe où je pourrai mettre en pratique mes compétences tout en apprenant de nouvelles technologies et méthodes de travail. Mon objectif est d'optimiser l'expérience utilisateur et d'apporter une réelle valeur à votre projet.",
       "resume-button": {
         "button-text": "Télécharger mon CV",
-        "button-link": "/assets/images/cv-olivier-le-louer-fr.pdf"
+        "button-link": ""
       },
       "profile-image": {
         "alt": "Photo d'Olivier"
@@ -72,15 +72,6 @@
         "barLevel": "80"
       },
       {
-        "title": "Java",
-        "logo": {
-          "src": "assets/images/logos/java-logo.svg",
-          "alt": "Logo Java"
-        },
-        "level": "En formation",
-        "barLevel": "30"
-      },
-      {
         "title": "Sass",
         "logo": {
           "src": "assets/images/logos/sass-logo.svg",
@@ -88,6 +79,15 @@
         },
         "level": "Expérience professionnelle",
         "barLevel": "90"
+      },
+      {
+        "title": "WordPress",
+        "logo": {
+          "src": "assets/images/logos/wordpress-blue-logo.svg",
+          "alt": "Logo WordPress"
+        },
+        "level": "Expérience professionnelle",
+        "barLevel": "80"
       },
       {
         "title": "PHP",
@@ -99,13 +99,13 @@
         "barLevel": "50"
       },
       {
-        "title": "WordPress",
+        "title": "Java",
         "logo": {
-          "src": "assets/images/logos/wordpress-blue-logo.svg",
-          "alt": "Logo WordPress"
+          "src": "assets/images/logos/java-logo.svg",
+          "alt": "Logo Java"
         },
-        "level": "Expérience professionnelle",
-        "barLevel": "80"
+        "level": "En formation",
+        "barLevel": "30"
       }
     ],
     "projects": {
@@ -116,59 +116,59 @@
       },
       "projects": [
         {
-          "title": "Station SME",
-          "text": "I am the text",
-          "excerpt": "Excerpt is there",
-          "types": ["Wordpress", "Twig", "PHP", "SCSS"],
+          "title": "Station SME (Santé Mentale Étudiante)",
+          "text": "",
+          "excerpt": "<p>J'ai développé en autonomie le site de la <strong>Station SME</strong>, une plateforme dédiée à la santé mentale étudiante, en utilisant WordPress. Le projet intègre <strong>Twig</strong> pour les templates, <strong>PHP</strong> pour le routage et les hooks, ainsi que <strong>JavaScript</strong> et <strong>Sass</strong> pour le style et les animations.</p><br /><p><strong>Enjeux :</strong></p><div><li>Créer un site attrayant avec des animations fluides et entièrement personnalisable par le client.</li><li>Implémenter la recherche avancée avec <strong>AddSearch</strong> pour permettre aux utilisateurs de trouver rapidement des informations dans tous les posts.</li></div>",
+          "types": ["Wordpress", "Twig", "PHP", "Javascript", "Sass"],
           "button": {
-            "link": "https://stationsme.ca/en/",
-            "title": "Link to the SME Station"
+            "link": "https://stationsme.ca/",
+            "title": "Lien vers la Station SME"
           },
           "image": {
-            "src": "assets/images/stationsme.png",
-            "alt": "Station SME homepage banner"
+            "src": "assets/images/projects/stationsme.webp",
+            "alt": "Page d'accueil de la Station SME"
           }
         },
         {
-          "title": "Via Prévention",
-          "text": "I am the text",
-          "excerpt": "Excerpt the return",
-          "types": ["Wordpress", "Twig", "PHP", "SCSS"],
+          "title": "Équipe Donovan",
+          "text": "",
+          "excerpt": "<p>Pour le site de l'Équipe Donovan, j'ai développé un site d'agence immobilière québécoise en <strong>Angular</strong> avec des styles <strong>Sass</strong>, dans le cadre de la solution e-closion proposée par l'entreprise Kryzalid à Montréal. Ce site allie personnalisation et modularité pour répondre aux besoins spécifiques du client tout en respectant la structure e-closion.</p><br/><p><strong>Enjeux :</strong></p><div><li>Créer un site unique à l'image du client tout en maintenant la cohérence avec la structure de la solution e-closion.</li><li>Améliorer continuellement la solution e-closion pour optimiser sa réponse aux besoins spécifiques des agences immobilières.</li></div>",
+          "types": ["Angular", "Sass"],
+          "button": {
+            "link": "https://www.equipedonovan.com/fr",
+            "title": "Lien vers l'Équipe Donovan"
+          },
+          "image": {
+            "src": "assets/images/projects/donovan.webp",
+            "alt": "Page d'accueil de l'Équipe Donovan"
+          }
+        },
+        {
+          "title": "Plateforme de gestion des concours pour l'Université de Montréal",
+          "text": "",
+          "excerpt": "<p>Pour l'Université de Montréal, j'ai co-développé une plateforme de concours en <strong>Vue.js</strong> et <strong>Laravel</strong> via <strong>Inertia</strong>. Cette application permet aux étudiants de consulter les concours proposés, de s'inscrire en ligne et de suivre leurs inscriptions actuelles ou passées.</p><br/><p><strong>Enjeux :</strong></p><div><li>Validation des statuts des concours pour afficher les informations pertinentes (ouvert, en cours, fermé).</li><li>Gestion du parcours étudiant : dépôt et validation de documents en lien avec chaque concours.</li></div>",
+          "types": ["Vue.js", "PHP", "Sass"],
+          "button": {
+            "link": "https://www.umontreal.ca/",
+            "title": "Lien vers l'Université de Montréal"
+          },
+          "image": {
+            "src": "assets/images/logos/udem-logo.svg",
+            "alt": "Logo UdeM"
+          }
+        },
+        {
+          "title": "Via prévention",
+          "text": "",
+          "excerpt": "<p>Pour Via Prévention, j'ai conçu un site web personnalisable sur <strong>WordPress</strong>, permettant au client d'administrer facilement son contenu. Le projet intègre <strong>PHP</strong> pour la gestion des routes, hooks et appels à la base de données, <strong>Twig</strong> pour le templating, ainsi que <strong>JavaScript</strong> et <strong>Sass</strong> pour des animations dynamiques. Le site permet également la commande de formations et de documents, avec création d'un bon de commande automatisé.</p><br/><p><strong>Enjeux :</strong></p><div><li>Création d'un site ludique, coloré et personnalisable selon les besoins du client.</li><li>Fonctionnalité de commande en ligne pour les formations et documents, incluant un système de bon de commande généré automatiquement.</li></div>",
+          "types": ["Wordpress", "Twig", "PHP", "Javascript", "Sass"],
           "button": {
             "link": "https://viaprevention.com/",
-            "title": "Link to Via Prévention"
+            "title": "Lien vers Via prévention"
           },
           "image": {
-            "src": "assets/images/stationsme.png",
-            "alt": "Station SME homepage banner"
-          }
-        },
-        {
-          "title": "Martine Deschesnes",
-          "text": "I am the text",
-          "excerpt": "Excerpt the re-return",
-          "types": ["Angular", "SCSS"],
-          "button": {
-            "link": "https://www.martinedeschesnes.com/en",
-            "title": "Link to Martine Deschesnes"
-          },
-          "image": {
-            "src": "assets/images/stationsme.png",
-            "alt": "Station SME homepage banner"
-          }
-        },
-        {
-          "title": "Martine Deschesnes",
-          "text": "I am the text",
-          "excerpt": "Excerpt the re-return",
-          "types": ["Angular", "SCSS"],
-          "button": {
-            "link": "https://www.martinedeschesnes.com/en",
-            "title": "Link to Martine Deschesnes"
-          },
-          "image": {
-            "src": "assets/images/stationsme.png",
-            "alt": "Station SME homepage banner"
+            "src": "assets/images/projects/vp.webp",
+            "alt": "Page d'accueil de Via prévention"
           }
         }
       ]

@@ -1,48 +1,52 @@
 <div
-  class="group/project perspective-1000"
+  class="group/project h-full perspective-1000"
   data-aos="fade-up"
   data-aos-delay="100"
 >
   <div
-    class="relative transform rounded-3xl bg-light-bgSecondary p-4 duration-300 transform-style-preserve-3d group-focus-within/project:rotate-y-180 group-hover/project:rotate-y-180 md:p-7"
+    class="relative h-full transform rounded-3xl bg-light-bgSecondary p-4 duration-300 transform-style-preserve-3d group-focus-within/project:rotate-y-180 lg:p-7 lg:group-hover/project:rotate-y-180"
+    [ngClass]="{ 'rotate-y-180': isFlipped }"
+    (click)="toggleFlip()"
   >
     <!-- Front of the card -->
-    <div class="flex flex-col gap-5 backface-hidden">
+    <div
+      class="flex h-full cursor-pointer flex-col justify-between gap-5 backface-hidden lg:cursor-default"
+    >
       <img
         *ngIf="project.image"
         [src]="project.image.src"
         [alt]="project.image.alt"
         class="rounded-xl md:rounded-2xl"
       />
-      <h3
-        *ngIf="project.title"
-        class="text-light-title font-roboto text-xl font-semibold sm:text-2xl"
-      >
-        {{ project.title }}
-      </h3>
-      <div
-        class="flex flex-wrap gap-3"
-        *ngIf="project.types && project.types.length > 0"
-      >
-        <span
-          *ngFor="let type of project.types"
-          class="rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold text-light-text sm:text-base"
+      <div class="flex flex-col gap-5">
+        <h3
+          *ngIf="project.title"
+          class="font-roboto text-xl font-semibold text-light-title sm:text-2xl"
         >
-          {{ type }}
-        </span>
+          {{ project.title }}
+        </h3>
+        <div
+          class="flex flex-wrap gap-3"
+          *ngIf="project.types && project.types.length > 0"
+        >
+          <span
+            *ngFor="let type of project.types"
+            class="rounded-full border-2 border-light-text px-3 py-1 font-roboto text-sm font-semibold text-light-text sm:text-base"
+          >
+            {{ type }}
+          </span>
+        </div>
       </div>
     </div>
     <!-- Back of the card -->
     <div
-      class="absolute inset-8 flex rotate-y-180 flex-col justify-between gap-5 backface-hidden"
+      class="absolute inset-8 flex rotate-y-180 flex-col justify-between gap-5 overflow-y-auto backface-hidden"
       *ngIf="project.excerpt"
     >
-      <p
-        *ngIf="project.excerpt"
+      <div
         class="font-nunito text-base text-light-text sm:text-lg"
-      >
-        {{ project.excerpt }}
-      </p>
+        [innerHTML]="project.excerpt"
+      ></div>
       <a
         *ngIf="project.button"
         [href]="project.button.link"
@@ -50,7 +54,7 @@
         target="_blank"
         >{{ project.button.title }}
         <i
-          class="icon-arrow-up-right transform text-xs transition-transform duration-300 group-hover/projectlink:-translate-y-1 group-hover/projectlink:translate-x-1 group-focus/projectlink:-translate-y-1 group-focus/projectlink:translate-x-1"
+          class="icon-arrow-up-right mr-1 transform text-xs transition-transform duration-300 group-hover/projectlink:-translate-y-1 group-hover/projectlink:translate-x-1 group-focus/projectlink:-translate-y-1 group-focus/projectlink:translate-x-1"
         ></i
       ></a>
     </div>

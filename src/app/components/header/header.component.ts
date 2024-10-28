@@ -50,9 +50,9 @@ export class HeaderComponent implements AfterViewInit {
     this.headerHeight = this.headerHtml.nativeElement.offsetHeight;
   }
 
-  // Save selected language to local storage
+  // Save selected language to local storage and reload page
   changeLanguage(lang: string): void {
-    this.translateService.use(lang);
     localStorage.setItem('lang', lang);
+    window.location.reload();
   }
 }

@@ -51,7 +51,7 @@ export class PanelComponent {
 
   // Save selected language to local storage
   changeLanguage(lang: string): void {
-    this.translateService.use(lang);
     localStorage.setItem('lang', lang);
+    window.location.reload();
   }
 }
