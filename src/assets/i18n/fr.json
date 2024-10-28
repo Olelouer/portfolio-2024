@@ -114,7 +114,7 @@
         {
           "title": "Station SME (Santé Mentale Étudiante)",
           "text": "",
-          "excerpt": "<p>J'ai développé en autonomie le site de la <strong>Station SME</strong>, une plateforme dédiée à la santé mentale étudiante, en utilisant WordPress. Le projet intègre <strong>Twig</strong> pour les templates, <strong>PHP</strong> pour le routage et les hooks, ainsi que <strong>JavaScript</strong> et <strong>Sass</strong> pour le style et les animations.</p><br /><p><strong>Enjeux :</strong></p><div><li>Créer un site attrayant avec des animations fluides et entièrement personnalisable par le client.</li><li>Implémenter la recherche avancée avec <strong>AddSearch</strong> pour permettre aux utilisateurs de trouver rapidement des informations dans tous les posts.</li></div>",
+          "excerpt": "<p>J'ai développé en autonomie le site de la <strong>Station SME</strong>, une plateforme dédiée à la santé mentale étudiante, en utilisant WordPress. Le projet intègre <strong>Twig</strong> pour les templates, <strong>PHP</strong> pour le routage et les hooks, ainsi que <strong>JavaScript</strong> et <strong>Sass</strong> pour le style et les animations.</p><br /><p><strong>Enjeux :</strong></p><ul><li>• Créer un site attrayant avec des animations fluides et entièrement personnalisable par le client.</li><li>• Implémenter la recherche avancée avec <strong>AddSearch</strong> pour permettre aux utilisateurs de trouver rapidement des informations dans tous les posts.</li></ul>",
           "types": ["Wordpress", "Twig", "PHP", "Javascript", "Sass"],
           "button": {
             "link": "https://stationsme.ca/",
@@ -128,7 +128,7 @@
         {
           "title": "Équipe Donovan",
           "text": "",
-          "excerpt": "<p>Pour le site de l'Équipe Donovan, j'ai développé un site d'agence immobilière québécoise en <strong>Angular</strong> avec des styles <strong>Sass</strong>, dans le cadre de la solution e-closion proposée par l'entreprise Kryzalid à Montréal. Ce site allie personnalisation et modularité pour répondre aux besoins spécifiques du client tout en respectant la structure e-closion.</p><br/><p><strong>Enjeux :</strong></p><div><li>Créer un site unique à l'image du client tout en maintenant la cohérence avec la structure de la solution e-closion.</li><li>Améliorer continuellement la solution e-closion pour optimiser sa réponse aux besoins spécifiques des agences immobilières.</li></div>",
+          "excerpt": "<p>Pour le site de l'Équipe Donovan, j'ai développé un site d'agence immobilière québécoise en <strong>Angular</strong> avec des styles <strong>Sass</strong>, dans le cadre de la solution e-closion proposée par l'entreprise Kryzalid à Montréal. Ce site allie personnalisation et modularité pour répondre aux besoins spécifiques du client tout en respectant la structure e-closion.</p><br/><p><strong>Enjeux :</strong></p><ul><li>• Créer un site unique à l'image du client tout en maintenant la cohérence avec la structure de la solution e-closion.</li><li>• Améliorer continuellement la solution e-closion pour optimiser sa réponse aux besoins spécifiques des agences immobilières.</li></ul>",
           "types": ["Angular", "Sass"],
           "button": {
             "link": "https://www.equipedonovan.com/fr",
@@ -142,7 +142,7 @@
         {
           "title": "Plateforme de gestion des concours pour l'Université de Montréal",
           "text": "",
-          "excerpt": "<p>Pour l'Université de Montréal, j'ai co-développé une plateforme de concours en <strong>Vue.js</strong> et <strong>Laravel</strong> via <strong>Inertia</strong>. Cette application permet aux étudiants de consulter les concours proposés, de s'inscrire en ligne et de suivre leurs inscriptions actuelles ou passées.</p><br/><p><strong>Enjeux :</strong></p><div><li>Validation des statuts des concours pour afficher les informations pertinentes (ouvert, en cours, fermé).</li><li>Gestion du parcours étudiant : dépôt et validation de documents en lien avec chaque concours.</li></div>",
+          "excerpt": "<p>Pour l'Université de Montréal, j'ai co-développé une plateforme de concours en <strong>Vue.js</strong> et <strong>Laravel</strong> via <strong>Inertia</strong>. Cette application permet aux étudiants de consulter les concours proposés, de s'inscrire en ligne et de suivre leurs inscriptions actuelles ou passées.</p><br/><p><strong>Enjeux :</strong></p><ul><li>• Validation des statuts des concours pour afficher les informations pertinentes (ouvert, en cours, fermé).</li><li>• Gestion du parcours étudiant : dépôt et validation de documents en lien avec chaque concours.</li></ul>",
           "types": ["Vue.js", "PHP", "Sass"],
           "button": {
             "link": "https://www.umontreal.ca/",
@@ -156,7 +156,7 @@
         {
           "title": "Via prévention",
           "text": "",
-          "excerpt": "<p>Pour Via Prévention, j'ai conçu un site web personnalisable sur <strong>WordPress</strong>, permettant au client d'administrer facilement son contenu. Le projet intègre <strong>PHP</strong> pour la gestion des routes, hooks et appels à la base de données, <strong>Twig</strong> pour le templating, ainsi que <strong>JavaScript</strong> et <strong>Sass</strong> pour des animations dynamiques. Le site permet également la commande de formations et de documents, avec création d'un bon de commande automatisé.</p><br/><p><strong>Enjeux :</strong></p><div><li>Création d'un site ludique, coloré et personnalisable selon les besoins du client.</li><li>Fonctionnalité de commande en ligne pour les formations et documents, incluant un système de bon de commande généré automatiquement.</li></div>",
+          "excerpt": "<p>Pour Via Prévention, j'ai conçu un site web personnalisable sur <strong>WordPress</strong>, permettant au client d'administrer facilement son contenu. Le projet intègre <strong>PHP</strong> pour la gestion des routes, hooks et appels à la base de données, <strong>Twig</strong> pour le templating, ainsi que <strong>JavaScript</strong> et <strong>Sass</strong> pour des animations dynamiques. Le site permet également la commande de formations et de documents, avec création d'un bon de commande automatisé.</p><br/><p><strong>Enjeux :</strong></p><ul><li>• Création d'un site ludique, coloré et personnalisable selon les besoins du client.</li><li>• Fonctionnalité de commande en ligne pour les formations et documents, incluant un système de bon de commande généré automatiquement.</li></ul>",
           "types": ["Wordpress", "Twig", "PHP", "Javascript", "Sass"],
           "button": {
             "link": "https://viaprevention.com/",

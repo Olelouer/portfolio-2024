@@ -10,7 +10,7 @@
   >
     <!-- Front of the card -->
     <div
-      class="flex h-full cursor-pointer flex-col justify-between gap-5 backface-hidden lg:cursor-default"
+      class="flex h-full rotate-0 cursor-pointer flex-col justify-between gap-5 backface-hidden lg:cursor-default"
     >
       <img
         *ngIf="project.image"
@@ -40,7 +40,7 @@
     </div>
     <!-- Back of the card -->
     <div
-      class="absolute inset-8 flex rotate-y-180 flex-col justify-between gap-5 overflow-y-auto backface-hidden"
+      class="absolute inset-4 flex rotate-0 rotate-y-180 flex-col justify-between gap-5 overflow-y-auto backface-hidden lg:inset-7"
       *ngIf="project.excerpt"
     >
       <div

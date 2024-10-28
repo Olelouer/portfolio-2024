@@ -114,7 +114,7 @@
         {
           "title": "Station SME (Student Mental Health)",
           "text": "",
-          "excerpt": "<p>I independently developed the <strong>Station SME</strong> website, a platform dedicated to student mental health, using WordPress. The project integrates <strong>Twig</strong> for templating, <strong>PHP</strong> for routing and hooks, as well as <strong>JavaScript</strong> and <strong>Sass</strong> for styling and animations.</p><br /><p><strong>Challenges:</strong></p><div><li>Create an attractive site with smooth animations that is fully customizable by the client.</li><li>Implement advanced search with <strong>AddSearch</strong> to allow users to quickly find information across all posts.</li></div>",
+          "excerpt": "<p>I independently developed the <strong>Station SME</strong> website, a platform dedicated to student mental health, using WordPress. The project integrates <strong>Twig</strong> for templating, <strong>PHP</strong> for routing and hooks, as well as <strong>JavaScript</strong> and <strong>Sass</strong> for styling and animations.</p><br /><p><strong>Challenges:</strong></p><ul><li>• Create an attractive site with smooth animations that is fully customizable by the client.</li><li>• Implement advanced search with <strong>AddSearch</strong> to allow users to quickly find information across all posts.</li></ul>",
           "types": ["WordPress", "Twig", "PHP", "JavaScript", "Sass"],
           "button": {
             "link": "https://stationsme.ca/en",
@@ -128,7 +128,7 @@
         {
           "title": "Donovan Team",
           "text": "",
-          "excerpt": "<p>For the Donovan Team site, I developed a website for a Quebec real estate agency using <strong>Angular</strong> with <strong>Sass</strong> styles, as part of the e-closion solution provided by Kryzalid in Montreal. This site combines customization and modularity to meet the specific needs of the client while adhering to the e-closion structure.</p><br/><p><strong>Challenges:</strong></p><div><li>Creating a unique site reflecting the client's image while maintaining consistency with the e-closion solution structure.</li><li>Continuously improving the e-closion solution to better meet the specific needs of real estate agencies.</li></div>",
+          "excerpt": "<p>For the Donovan Team site, I developed a website for a Quebec real estate agency using <strong>Angular</strong> with <strong>Sass</strong> styles, as part of the e-closion solution provided by Kryzalid in Montreal. This site combines customization and modularity to meet the specific needs of the client while adhering to the e-closion structure.</p><br/><p><strong>Challenges:</strong></p><ul><li>• Creating a unique site reflecting the client's image while maintaining consistency with the e-closion solution structure.</li><li>• Continuously improving the e-closion solution to better meet the specific needs of real estate agencies.</li></ul>",
           "types": ["Angular", "Sass"],
           "button": {
             "link": "https://www.equipedonovan.com/en",
@@ -142,7 +142,7 @@
         {
           "title": "Contest Management Platform for the University of Montreal",
           "text": "",
-          "excerpt": "<p>For the University of Montreal, I co-developed a contest platform using <strong>Vue.js</strong> and <strong>Laravel</strong> via <strong>Inertia</strong>. This application allows students to view available contests, register online, and track their current or past registrations.</p><br/><p><strong>Challenges:</strong></p><div><li>Validating contest statuses to display relevant information (open, ongoing, closed).</li><li>Managing the student journey: submission and validation of documents related to each contest.</li></div>",
+          "excerpt": "<p>For the University of Montreal, I co-developed a contest platform using <strong>Vue.js</strong> and <strong>Laravel</strong> via <strong>Inertia</strong>. This application allows students to view available contests, register online, and track their current or past registrations.</p><br/><p><strong>Challenges:</strong></p><ul><li>• Validating contest statuses to display relevant information (open, ongoing, closed).</li><li>• Managing the student journey: submission and validation of documents related to each contest.</li></ul>",
           "types": ["Vue.js", "PHP", "Sass"],
           "button": {
             "link": "https://www.umontreal.ca/en",
@@ -156,7 +156,7 @@
         {
           "title": "Via Prévention",
           "text": "",
-          "excerpt": "<p>For Via Prévention, I designed a customizable website on <strong>WordPress</strong>, allowing the client to easily manage their content. The project integrates <strong>PHP</strong> for routing, hooks, and database calls, <strong>Twig</strong> for templating, as well as <strong>JavaScript</strong> and <strong>Sass</strong> for dynamic animations. The site also supports ordering training sessions and documents, with an automated order form creation.</p><br/><p><strong>Challenges:</strong></p><div><li>Creating an engaging, colorful, and customizable site according to the client’s needs.</li><li>Online ordering functionality for training sessions and documents, including an automated order form generation system.</li></div>",
+          "excerpt": "<p>For Via Prévention, I designed a customizable website on <strong>WordPress</strong>, allowing the client to easily manage their content. The project integrates <strong>PHP</strong> for routing, hooks, and database calls, <strong>Twig</strong> for templating, as well as <strong>JavaScript</strong> and <strong>Sass</strong> for dynamic animations. The site also supports ordering training sessions and documents, with an automated order form creation.</p><br/><p><strong>Challenges:</strong></p><ul><li>• Creating an engaging, colorful, and customizable site according to the client's needs.</li><li>• Online ordering functionality for training sessions and documents, including an automated order form generation system.</li></ul>",
           "types": ["WordPress", "Twig", "PHP", "JavaScript", "Sass"],
           "button": {
             "link": "https://viaprevention.com/",
