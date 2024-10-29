@@ -54,15 +54,6 @@
     },
     "skills-banner": [
       {
-        "title": "Sass",
-        "logo": {
-          "src": "assets/images/logos/sass-logo.svg",
-          "alt": "Sass Logo"
-        },
-        "level": "Professional experience",
-        "barLevel": "90"
-      },
-      {
         "title": "Angular",
         "logo": {
           "src": "assets/images/logos/angular-logo.svg",
@@ -79,6 +70,15 @@
         },
         "level": "Professional experience",
         "barLevel": "80"
+      },
+      {
+        "title": "Sass",
+        "logo": {
+          "src": "assets/images/logos/sass-logo.svg",
+          "alt": "Sass Logo"
+        },
+        "level": "Professional experience",
+        "barLevel": "90"
       },
       {
         "title": "WordPress",
