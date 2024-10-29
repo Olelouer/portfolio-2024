@@ -9,7 +9,7 @@
       "intro": " Bonjour, je m'appelle Olivier ! Avec plus de 2 ans d'expérience en tant que Développeur Front-end au Canada, j'ai conçu des applications avec Angular pour 7 agences immobilières et créé 8 thèmes WordPress sur mesure. Je suis actuellement à la recherche d'une alternance pour débuter une formation en développement Full-stack. <br /> <br /> Je maîtrise déjà Angular, ainsi que des technologies comme JavaScript, HTML, SCSS et PHP, ce qui me permet de développer des applications et des interfaces efficaces. Je suis enthousiaste à l'idée de rejoindre une équipe où je pourrai mettre en pratique mes compétences tout en apprenant de nouvelles technologies et méthodes de travail. Mon objectif est d'optimiser l'expérience utilisateur et d'apporter une réelle valeur à votre projet.",
       "resume-button": {
         "button-text": "Télécharger mon CV",
-        "button-link": ""
+        "button-link": "assets/files/olivier-le-louer-cv.pdf"
       },
       "profile-image": {
         "alt": "Photo d'Olivier"

@@ -27,7 +27,7 @@ export class SkillCardComponent implements AfterViewInit {
     if (this.skill.barLevel) {
       setTimeout(() => {
         this.progressBar.nativeElement.style.width = `${this.skill.barLevel}%`;
-      }, 900);
+      }, 600);
     }
   }
 }

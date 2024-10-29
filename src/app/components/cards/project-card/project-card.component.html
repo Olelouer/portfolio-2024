@@ -40,11 +40,11 @@
     </div>
     <!-- Back of the card -->
     <div
-      class="absolute inset-4 flex rotate-0 rotate-y-180 flex-col justify-between gap-5 overflow-y-auto backface-hidden lg:inset-7"
+      class="absolute inset-4 flex rotate-0 rotate-y-180 flex-col justify-between gap-5 backface-hidden lg:inset-7"
       *ngIf="project.excerpt"
     >
       <div
-        class="font-nunito text-base text-light-text sm:text-lg"
+        class="overflow-y-auto font-nunito text-base text-light-text sm:text-lg"
         [innerHTML]="project.excerpt"
       ></div>
       <a

@@ -67,22 +67,24 @@
         >
         </snip-main-button>
         <div class="language-switcher">
-          <a
+          <button
             class="font-roboto text-base font-bold text-light-text transition-all duration-300 hover:cursor-pointer hover:opacity-75 md:text-lg xl:text-xl"
             *ngIf="currentLang === 'fr'"
             (click)="changeLanguage('en')"
             (keydown.enter)="changeLanguage('en')"
             tabindex="0"
-            >EN</a
           >
-          <a
+            EN
+          </button>
+          <button
             class="font-roboto text-base font-bold text-light-text transition-all duration-300 hover:cursor-pointer hover:opacity-75 md:text-lg xl:text-xl"
             *ngIf="currentLang === 'en'"
             (click)="changeLanguage('fr')"
             (keydown.enter)="changeLanguage('fr')"
             tabindex="0"
-            >FR</a
           >
+            FR
+          </button>
         </div>
       </nav>
     </div>
